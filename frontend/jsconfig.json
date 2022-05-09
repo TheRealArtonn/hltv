@@ -7,9 +7,12 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "compilerOptions": {
+      "jsx": "preserve"
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "vueCompilerOptions": {
       "experimentalDisableTemplateSupport": true
-    },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    }
   }
 }

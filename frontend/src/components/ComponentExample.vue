@@ -14,31 +14,12 @@ export default {
 };
 </script>
 
+// Write all of your css below, just like what you would do normally.
 <style lang="scss" scoped>
-.votes {
-    width: 180px;
-    height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 15px;
-}
-.votes__icon {
-    width: 40px;
-    height: 40px;
-    background-image: url("@/assets/img/icons/vote-hollow.svg");
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 0.5s ease;
-}
+//Import needed css partials, in this case we needed the variables.
+@import "@/assets/scss/_variables.scss";
 
-.votes__icon--down {
-    transform: rotate(180deg);
-    margin-top: 4px;
-}
-
-.votes__icon--active {
-    background-image: url("@/assets/img/icons/vote-filled.svg");
+.titties {
+    color: $titties-color;
 }
 </style>

@@ -1,18 +1,16 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "baseUrl": "./",
-    "moduleResolution": "node",
-    "paths": {
-      "@/*": ["src/*"]
-    },
     "compilerOptions": {
-      "jsx": "preserve"
-    },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
-    "vueCompilerOptions": {
-      "experimentalDisableTemplateSupport": true
+        "vueCompilerOptions": {
+            "experimentalDisableTemplateSupport": true,
+            "jsx": "preserve"
+        },
+        "target": "es5",
+        "module": "esnext",
+        "baseUrl": "./",
+        "moduleResolution": "node",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     }
-  }
 }

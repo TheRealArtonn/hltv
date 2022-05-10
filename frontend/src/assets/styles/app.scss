@@ -18,3 +18,21 @@
     min-width: 450px;
     height: 100%;
 }
+
+.module {
+    width: 100%;
+    height: 100%;
+    background-color: var.$element-background-color;
+}
+
+.module__header {
+    width: 100%;
+    height: 40px;
+    background: var.$header-gradient-background-color;
+    text-transform: uppercase;
+}
+
+.module__body {
+    width: 100%;
+    height: auto;
+}

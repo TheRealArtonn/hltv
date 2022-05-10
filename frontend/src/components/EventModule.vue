@@ -2,6 +2,7 @@
     <div class="module">
         <div class="module__header">{{ moduleName }}</div>
         <div class="module__body">{{ item }}</div>
+        <div class="module__footer">Show more</div>
     </div>
 </template>
 

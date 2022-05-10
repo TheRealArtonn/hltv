@@ -1,5 +1,5 @@
 <template>
-    <div class="votes">
+    <div class="event-module">
         <div class="votes__icon"></div>
         <div class="likes">{{ item.likes }}</div>
         <div class="votes__icon votes__icon--down">{{ item.dislikes }}</div>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: "voteModule",
+    name: "EventModule",
     props: ["item"],
 };
 </script>
@@ -19,7 +19,7 @@ export default {
 //Import needed css partials, in this case we needed the variables.
 @import "@/assets/scss/_variables.scss";
 
-.titties {
+.event-module {
     color: $titties-color;
 }
 </style>

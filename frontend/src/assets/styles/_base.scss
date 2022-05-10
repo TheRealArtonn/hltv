@@ -1,9 +1,9 @@
 @use "variables" as var;
 
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 article,
@@ -18,5 +18,14 @@ main,
 nav,
 section,
 summary {
-  display: block;
+    display: block;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
 }

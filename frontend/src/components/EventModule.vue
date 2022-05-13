@@ -1,7 +1,9 @@
 <template>
     <div class="module">
-        <div class="module__header">{{ moduleName }}</div>
-        <div class="module__body">{{ item }}</div>
+        <h2 class="module__header">{{ moduleName }}</h2>
+        <div class="module__body">
+            <h3 class="body__title">Test tekst</h3>
+        </div>
         <div class="module__footer">Show more</div>
     </div>
 </template>

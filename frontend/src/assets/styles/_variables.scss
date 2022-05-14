@@ -1,7 +1,16 @@
+$primary-font-color: #ffffff;
+$secoundary-font-color: #353535;
+$unfocused-font-color: #585858;
+
 $element-background-color: #ffffff;
+$element-border-color: #efefef;
+
+$element-button-color: #fcfcfc;
+
 $header-gradient-background-color: linear-gradient(
     135deg,
     rgba(67, 95, 172, 1) 0%,
     rgba(26, 53, 115, 1) 100%
 );
-$element-padding: 10px 20px;
+
+$general-padding: 15px;

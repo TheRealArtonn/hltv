@@ -24,34 +24,85 @@
     height: 100%;
     background-color: var.$element-background-color;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .module__header {
     width: 100%;
     height: 40px;
-    background: var.$header-gradient-background-color;
+    font-size: 1.25em;
+    text-shadow: 0px 1px 3px #0000002e;
     text-transform: uppercase;
+    color: var.$primary-font-color;
+    background: var.$header-gradient-background-color;
+    display: flex;
+    align-items: center;
+    padding-left: var.$general-padding;
 }
 
 .module__body {
     width: 100%;
     height: auto;
+    color: var.$secoundary-font-color;
 
     .body__title {
         width: 100%;
         height: 50px;
         font-size: 16px;
-        font-weight: 800;
+        font-weight: 700;
+        padding-left: var.$general-padding;
+        display: flex;
+        align-items: center;
     }
 
-    .body__seperation-title {
+    .body__unfocused-title {
         width: 100%;
         height: 40px;
+        font-size: 12px;
         font-weight: 400;
+        color: var.$unfocused-font-color;
+        display: flex;
+        align-items: center;
+        padding-left: var.$general-padding;
+    }
+
+    .body__border-below {
+        border-bottom: 1px solid var.$element-border-color;
+    }
+
+    .list-item {
+        width: 100%;
+        height: auto;
+        padding: var.$general-padding;
+        border-top: 1px solid var.$element-border-color;
+        border-bottom: 1px solid var.$element-border-color;
+
+        .list-item__title {
+            font-size: 1em;
+            font-weight: 700;
+        }
+        .list-item__text {
+            font-size: 0.875em;
+            font-weight: 400;
+        }
+
+        .list-item__left-image {
+            width: 68px;
+            height: 68px;
+            // background-color: $;
+        }
     }
 }
 
 .module__footer {
     width: 100%;
     height: 40px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var.$element-button-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

@@ -2,7 +2,11 @@
     <div class="module">
         <h2 class="module__header">{{ moduleName }}</h2>
         <div class="module__body">
-            <h3 class="body__title">Test tekst</h3>
+            <h3 class="body__title body__border-below">Ongoing events</h3>
+            <div class="body__unfocused-title">Relevant to you</div>
+            <div class="list-item">
+                <div class="list-item__left-image"></div>
+            </div>
         </div>
         <div class="module__footer">Show more</div>
     </div>
@@ -14,7 +18,7 @@ export default {
     props: ["item"],
     data: function () {
         return {
-            moduleName: "Event",
+            moduleName: "Events",
         };
     },
 };

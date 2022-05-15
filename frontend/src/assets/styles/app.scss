@@ -94,6 +94,13 @@
             border-bottom: 1px solid var.$list-select-border;
         }
 
+        &--selected,
+        &--selected:hover {
+            background-color: var.$header-gradient-background-color;
+            color: var.$primary-font-color;
+            border: none;
+        }
+
         &__left-image {
             width: 68px;
             height: 68px;

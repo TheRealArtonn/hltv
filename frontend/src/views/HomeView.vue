@@ -10,7 +10,7 @@
 
 <script>
 import EventModule from "@/components/EventModule.vue";
-import TryModule from "@/components/tryModule.vue";
+import TryModule from "@/components/TryModule.vue";
 
 export default {
     name: "HomeView",

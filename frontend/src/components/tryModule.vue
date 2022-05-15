@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: "EventModule",
+    name: "TryModule",
     props: ["value"],
     data: function () {
         return {

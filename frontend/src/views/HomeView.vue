@@ -1,22 +1,87 @@
 <template>
     <div class="home grid">
-        <event-module :item="value" class="grid__item grid__item--events" />
+        <event-module
+            :itemList="itemList"
+            class="grid__item grid__item--events"
+        />
+        <Try-module :value="value" />
     </div>
 </template>
 
 <script>
 import EventModule from "@/components/EventModule.vue";
+import TryModule from "@/components/tryModule.vue";
 
 export default {
     name: "HomeView",
     data: function () {
         return {
-            value: "dildo",
-            sort: "lorte is",
-            yellow: "noodles",
+            value: "pis",
+            itemList: {
+                ongoing: [
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier 1",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: true,
+                    },
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier 1",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: true,
+                    },
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier 2",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: false,
+                    },
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier 2",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: false,
+                    },
+                ],
+                upcoming: [
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: true,
+                    },
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: false,
+                    },
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: false,
+                    },
+                    {
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: false,
+                    },
+                ],
+            },
         };
     },
-    components: { EventModule },
+    components: { EventModule, TryModule },
 };
 </script>
 

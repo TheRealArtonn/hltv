@@ -3,6 +3,12 @@
 @use "buttons";
 @use "base";
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 .grid {
     width: 1400px;
     height: auto;
@@ -42,7 +48,7 @@
 
 .module__body {
     width: 100%;
-    height: auto;
+    height: calc(100% - 80px);
     color: var.$secoundary-font-color;
 
     .body__title {
@@ -50,9 +56,14 @@
         height: 50px;
         font-size: 16px;
         font-weight: 700;
+        border-bottom: 1px solid var.$element-border-color;
         padding-left: var.$general-padding;
         display: flex;
         align-items: center;
+
+        &--secound-title {
+            margin-top: 20px;
+        }
     }
 
     .body__unfocused-title {
@@ -61,35 +72,56 @@
         font-size: 12px;
         font-weight: 400;
         color: var.$unfocused-font-color;
+        border-bottom: 1px solid var.$element-border-color;
         display: flex;
         align-items: center;
         padding-left: var.$general-padding;
-    }
-
-    .body__border-below {
-        border-bottom: 1px solid var.$element-border-color;
     }
 
     .list-item {
         width: 100%;
         height: auto;
         padding: var.$general-padding;
-        border-top: 1px solid var.$element-border-color;
         border-bottom: 1px solid var.$element-border-color;
+        border-top: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
 
-        .list-item__title {
-            font-size: 1em;
-            font-weight: 700;
-        }
-        .list-item__text {
-            font-size: 0.875em;
-            font-weight: 400;
+        &:hover {
+            background-color: var.$list-select-bg;
+            border-top: 1px solid var.$list-select-border;
+            border-bottom: 1px solid var.$list-select-border;
         }
 
-        .list-item__left-image {
+        &__left-image {
             width: 68px;
             height: 68px;
-            // background-color: $;
+            background-color: grey;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-right: 10px;
+
+            &__left-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__text-box {
+            width: auto;
+            height: auto;
+
+            .text-box__title {
+                font-size: 1em;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .text-box__text {
+                font-size: 0.875em;
+                font-weight: 400;
+            }
         }
     }
 }
@@ -101,6 +133,7 @@
     font-weight: 700;
     text-transform: uppercase;
     background-color: var.$element-button-color;
+    border-top: 1px solid var.$element-border-color;
     display: flex;
     justify-content: center;
     align-items: center;

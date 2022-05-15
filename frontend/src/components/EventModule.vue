@@ -2,71 +2,89 @@
     <div class="module">
         <h2 class="module__header">{{ moduleName }}</h2>
         <div class="module__body">
-            <h3 class="body__title">Ongoing events</h3>
-            <div class="body__unfocused-title">Relevant to you</div>
             <div
-                class="list-item"
-                :class="selected === index && 'list-item--selected'"
-                v-for="(item, index) in releventItems"
-                :key="index"
-                v-on:click="onClickActivate(index)"
+                v-for="(itemListSection, index) in itemListSections"
+                :key="itemListSection.title"
             >
-                <div class="list-item__left-image">
-                    <img :src="require(`@/assets/img/${item.img}`)" alt="" />
-                </div>
-                <div class="list-item__text-box">
-                    <h4 class="text-box__title">
-                        {{ addElipse(item.title, 35) }}
-                    </h4>
-                    <div class="text-box">
-                        <div v-if="item.flag">
-                            <img src="" alt="" />
-                        </div>
-                        <p>{{ addElipse(item.text, 45) }}</p>
+                <h3
+                    class="body__title"
+                    :class="index > 0 && 'body__title--secound-title'"
+                >
+                    {{ itemListSection.title }}
+                </h3>
+                <div
+                    v-for="itemListGroup in itemListSection.itemListGroups"
+                    :key="itemListGroup.title"
+                >
+                    <div class="body__unfocused-title">
+                        {{ itemListGroup.title }}
                     </div>
+                    <left-image-list-item
+                        v-for="item in itemListGroup.items"
+                        :key="item.id"
+                        :item="item"
+                        :selected="this.selectedId === item.id"
+                        v-on:click="this.selectedId = item.id"
+                    />
                 </div>
             </div>
-            <div class="body__unfocused-title">Other</div>
-            <h3 class="body__title body__title--secound-title">
-                Upcoming events
-            </h3>
-            <div class="body__unfocused-title">Relevant to you</div>
         </div>
         <div class="module__footer">Show more</div>
     </div>
 </template>
 
 <script>
+import LeftImageListItem from "@/components/LeftImageListItem.vue";
+// import TextOnlyListItem from "@/components/TextOnlyListItem";
+
 export default {
     name: "EventModule",
     props: ["itemList"],
     data: function () {
         return {
             moduleName: "Events",
-            selected: 0,
+            selectedId: 1,
+            itemListSections: [
+                {
+                    title: "Ongoing",
+                    itemListGroups: [
+                        {
+                            title: "Relevant to you",
+                            items: this.itemList.ongoing.filter(
+                                (ongoing) => ongoing.relevant
+                            ),
+                        },
+                        {
+                            title: "Other",
+                            items: this.itemList.ongoing.filter(
+                                (ongoing) => !ongoing.relevant
+                            ),
+                        },
+                    ],
+                },
+                {
+                    title: "Upcoming events",
+                    itemListGroups: [
+                        {
+                            title: "Relevant to you",
+                            items: this.itemList.upcoming.filter(
+                                (upcoming) => upcoming.relevant
+                            ),
+                        },
+                        {
+                            title: "Other",
+                            items: this.itemList.upcoming.filter(
+                                (upcoming) => !upcoming.relevant
+                            ),
+                        },
+                    ],
+                },
+            ],
         };
     },
-    computed: {
-        releventItems() {
-            return this.itemList.ongoing.filter((ongoing) => ongoing.relevant);
-        },
-        unreleventItems() {
-            return this.itemList.ongoing.filter((ongoing) => !ongoing.relevant);
-        },
-    },
-    methods: {
-        onClickActivate(index) {
-            this.selected = index;
-        },
-        addElipse(text, length) {
-            if (text.length > length) {
-                var textCut = text.substring(0, length) + "...";
-                return textCut;
-            } else {
-                return text;
-            }
-        },
-    },
+    components: { LeftImageListItem },
+    computed: {},
+    methods: {},
 };
 </script>
 

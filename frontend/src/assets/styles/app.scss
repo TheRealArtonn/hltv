@@ -98,7 +98,8 @@
         &--selected:hover {
             background-color: var.$header-gradient-background-color;
             color: var.$primary-font-color;
-            border: none;
+            border-top: 1px solid var.$list-select-border;
+            border-bottom: 1px solid var.$list-select-border;
         }
 
         &__left-image {
@@ -128,6 +129,24 @@
             .text-box__text {
                 font-size: 0.875em;
                 font-weight: 400;
+            }
+        }
+
+        &__text-box--side-icon {
+            width: calc(100% - 108px);
+            overflow: hidden;
+            white-space: nowrap;
+
+            .text-box__title {
+                font-size: 1em;
+                font-weight: 700;
+                margin-bottom: 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .text-box__text p {
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }

@@ -1,0 +1,11 @@
+{
+    "eslint.validate": ["vue", "html", "javascript"],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "prettier.endOfLine": "crlf",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

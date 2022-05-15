@@ -20,6 +20,7 @@ export default {
             itemList: {
                 ongoing: [
                     {
+                        id: 1,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier 1",
                         text: "Europe (Online) | May 23rd - Jun 25th",
@@ -27,6 +28,7 @@ export default {
                         relevant: true,
                     },
                     {
+                        id: 2,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier 1",
                         text: "Europe (Online) | May 23rd - Jun 25th",
@@ -34,6 +36,7 @@ export default {
                         relevant: true,
                     },
                     {
+                        id: 3,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier 2",
                         text: "Europe (Online) | May 23rd - Jun 25th",
@@ -41,6 +44,15 @@ export default {
                         relevant: false,
                     },
                     {
+                        id: 4,
+                        img: "republic-league-small.jpg",
+                        title: "Republeague Season 3 Closed Qualifier 2",
+                        text: "Europe (Online) | May 23rd - Jun 25th",
+                        flag: "",
+                        relevant: false,
+                    },
+                    {
+                        id: 5,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier 2",
                         text: "Europe (Online) | May 23rd - Jun 25th",
@@ -50,6 +62,7 @@ export default {
                 ],
                 upcoming: [
                     {
+                        id: 6,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier",
                         text: "Europe (Online) | May 23rd - Jun 25th",
@@ -57,6 +70,7 @@ export default {
                         relevant: true,
                     },
                     {
+                        id: 7,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier",
                         text: "Europe (Online) | May 23rd - Jun 25th",
@@ -64,6 +78,7 @@ export default {
                         relevant: false,
                     },
                     {
+                        id: 8,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier",
                         text: "Europe (Online) | May 23rd - Jun 25th",
@@ -71,6 +86,7 @@ export default {
                         relevant: false,
                     },
                     {
+                        id: 9,
                         img: "republic-league-small.jpg",
                         title: "Republeague Season 3 Closed Qualifier",
                         text: "Europe (Online) | May 23rd - Jun 25th",

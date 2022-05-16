@@ -15,7 +15,7 @@
     background-color: blanchedalmond;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(70px, auto);
+    grid-auto-rows: 70px;
     gap: 25px;
     padding: 25px;
 }
@@ -31,6 +31,7 @@
     background-color: var.$element-background-color;
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
 }
 
 .module__header {
@@ -50,6 +51,8 @@
     width: 100%;
     height: calc(100% - 80px);
     color: var.$secoundary-font-color;
+    position: relative;
+    overflow-y: auto;
 
     .body__title {
         width: 100%;
@@ -164,4 +167,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+
+    &:hover {
+        background-color: var.$element-button-hover;
+    }
 }

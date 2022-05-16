@@ -4,7 +4,7 @@
             :itemList="itemList"
             class="grid__item grid__item--events"
         />
-        <Try-module :value="value" />
+        <Try-module class="grid__item--pis" :value="value" />
     </div>
 </template>
 
@@ -104,6 +104,11 @@ export default {
 <style lang="scss" scoped>
 .grid__item--events {
     grid-column: 1 / span 1;
-    grid-row: 1 / span 9;
+    grid-row: 1 / span 14;
+}
+
+.grid__item--pis {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 4;
 }
 </style>

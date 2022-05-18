@@ -6,6 +6,7 @@
     },
     "prettier.tabWidth": 4,
     "prettier.useTabs": true,
-    "prettier.endOfLine": "lf",
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "prettier.endOfLine": "crlf",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.eol": "\r\n"
 }

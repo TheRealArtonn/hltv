@@ -10,7 +10,7 @@
                 </h4>
                 <div
                     class="title-container__favorit"
-                    v-on:click="console.log(item.id)"
+                    v-on:click.stop="consoleLog(this.item.id)"
                 ></div>
             </div>
             <div class="text-box__text-container">
@@ -29,6 +29,11 @@ export default {
     props: ["item", "selected"],
     data: function () {
         return {};
+    },
+    methods: {
+        consoleLog(value) {
+            console.log(value);
+        },
     },
 };
 </script>

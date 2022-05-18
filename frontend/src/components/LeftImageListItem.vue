@@ -10,7 +10,7 @@
                 </h4>
                 <div
                     class="title-container__favorit"
-                    v-on:click.stop="consoleLog(this.item.id)"
+                    v-on:click.stop="$emit('favoritId', this.item.id)"
                 ></div>
             </div>
             <div class="text-box__text-container">
@@ -26,15 +26,12 @@
 <script>
 export default {
     name: "LeftImageListItem",
+    emits: ["favoritId"],
     props: ["item", "selected"],
     data: function () {
         return {};
     },
-    methods: {
-        consoleLog(value) {
-            console.log(value);
-        },
-    },
+    methods: {},
 };
 </script>
 

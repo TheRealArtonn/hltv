@@ -7,6 +7,7 @@
                 :key="itemListSection.title"
             >
                 <h3
+                    v-if="itemListSection.title"
                     class="body__title"
                     :class="index > 0 && 'body__title--secound-title'"
                 >
@@ -16,7 +17,10 @@
                     v-for="itemListGroup in itemListSection.itemListGroups"
                     :key="itemListGroup.title"
                 >
-                    <div class="body__unfocused-title">
+                    <div
+                        v-if="itemListGroup.title"
+                        class="body__unfocused-title"
+                    >
                         {{ itemListGroup.title }}
                     </div>
                     <left-image-list-item
@@ -24,6 +28,7 @@
                         :key="item.id"
                         :item="item"
                         :selected="this.selectedId === item.id"
+                        @favoritId="onClickSaveToLocalStorage"
                         v-on:click="this.selectedId = item.id"
                     />
                 </div>
@@ -84,7 +89,40 @@ export default {
     },
     components: { LeftImageListItem },
     computed: {},
-    methods: {},
+    methods: {
+        onClickSaveToLocalStorage(value) {
+            if (localStorage.getItem(value) === null) {
+                console.log(value);
+            }
+
+            window.localStorage.setItem(
+                "favoriteIds",
+                JSON.stringify([1, 2, 3])
+            );
+        },
+        // onNewNote() {
+        //     this.notes.push(this.message);
+        //     this.message = "";
+        //     this.saveToLocalStorage();
+        // },
+        // saveToLocalStorage() {
+        //     const jsonNotes = JSON.stringify(this.notes);
+        //     localStorage.setItem("notes", jsonNotes);
+        // },
+        // getFromLocalStorage() {
+        //     const jsonNotes = localStorage.getItem("notes");
+        //     this.notes = JSON.parse(jsonNotes);
+        // },
+        // updateNote() {
+        //     this.notes[this.noteId] = this.editNote;
+        //     this.modalVisible = false;
+        //     this.saveToLocalStorage();
+        // },
+        // deleteAll() {
+        //     this.notes = [];
+        //     this.saveToLocalStorage();
+        // },
+    },
 };
 </script>
 

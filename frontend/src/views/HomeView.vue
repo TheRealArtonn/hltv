@@ -4,13 +4,13 @@
             :itemList="itemList"
             class="grid__item grid__item--events"
         />
-        <Try-module class="grid__item--pis" :value="value" />
+        <ongoing-event-module class="grid__item grid__item--ongoingevent" />
     </div>
 </template>
 
 <script>
 import EventModule from "@/components/EventModule.vue";
-import TryModule from "@/components/TryModule.vue";
+import OngoingEventModule from "@/components/OngoingEventModule.vue";
 
 export default {
     name: "HomeView",
@@ -97,7 +97,7 @@ export default {
             },
         };
     },
-    components: { EventModule, TryModule },
+    components: { EventModule, OngoingEventModule },
 };
 </script>
 
@@ -107,8 +107,8 @@ export default {
     grid-row: 1 / span 14;
 }
 
-.grid__item--pis {
-    grid-column: 2 / span 1;
+.grid__item--ongoingevent {
+    grid-column: 2 / span 2;
     grid-row: 1 / span 4;
 }
 </style>

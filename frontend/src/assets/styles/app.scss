@@ -1,3 +1,5 @@
+//Always use modifiers furthest down the tree.
+
 @use "variables" as var;
 @use "fonts";
 @use "buttons";
@@ -105,8 +107,10 @@
             border-bottom: 1px solid var.$list-select-border;
         }
 
+        //If left image is desired here's a default setup. Make a modifier below if image size has to be changed.
         &__left-image {
             width: 68px;
+            min-width: 68px;
             height: 68px;
             background-color: grey;
             border-radius: 5px;
@@ -118,36 +122,55 @@
                 height: 100%;
                 object-fit: cover;
             }
+
+            //Modifiers below:
         }
 
         &__text-box {
             width: auto;
             height: auto;
 
-            .text-box__title {
+            .text-box__title-container {
                 font-size: 1em;
                 font-weight: 700;
                 margin-bottom: 5px;
+                display: flex;
             }
-            .text-box__text {
+
+            .title-container__favorit {
+                width: 18px;
+                height: 18px;
+                background-image: url(@/assets/img/icons/favorit.svg);
+                background-size: 18px;
+                background-position: center;
+
+                &:hover,
+                &--active {
+                    background-image: url(@/assets/img/icons/favorit-active.svg);
+                    background-size: 22px;
+                }
+            }
+
+            .text-box__text-container {
                 font-size: 0.875em;
                 font-weight: 400;
             }
         }
 
+        //Modifiers below:
+        //CSS rules specifically for the side icon list setup. Reusuable, therefore not scoped.
         &__text-box--side-icon {
-            width: calc(100% - 108px);
             overflow: hidden;
             white-space: nowrap;
 
-            .text-box__title {
-                font-size: 1em;
-                font-weight: 700;
-                margin-bottom: 5px;
+            .title-container__title {
+                width: calc(100% - 30px);
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
-            .text-box__text p {
+
+            .text-container__text {
+                width: calc(100% - 30px);
                 overflow: hidden;
                 text-overflow: ellipsis;
             }

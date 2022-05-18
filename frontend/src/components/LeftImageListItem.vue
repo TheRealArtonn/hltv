@@ -4,14 +4,20 @@
             <img :src="require(`@/assets/img/${this.item.img}`)" alt="" />
         </div>
         <div class="list-item__text-box list-item__text-box--side-icon">
-            <h4 class="text-box__title">
-                {{ this.item.title }}
-            </h4>
-            <div class="text-box__text">
+            <div class="text-box__title-container">
+                <h4 class="title-container__title">
+                    {{ this.item.title }}
+                </h4>
+                <div
+                    class="title-container__favorit"
+                    v-on:click="console.log(item.id)"
+                ></div>
+            </div>
+            <div class="text-box__text-container">
                 <div v-if="this.item.flag">
                     <img src="" alt="" />
                 </div>
-                <p>{{ this.item.text }}</p>
+                <p class="text-container__text">{{ this.item.text }}</p>
             </div>
         </div>
     </div>

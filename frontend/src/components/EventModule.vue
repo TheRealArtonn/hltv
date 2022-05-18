@@ -91,37 +91,17 @@ export default {
     computed: {},
     methods: {
         onClickSaveToLocalStorage(value) {
-            if (localStorage.getItem(value) === null) {
-                console.log(value);
+            const favoriteIds =
+                JSON.parse(localStorage.getItem("favoriteIds")) || [];
+
+            if (favoriteIds.includes(value)) {
+                favoriteIds.splice(favoriteIds.indexOf(value), 1);
+            } else {
+                favoriteIds.push(value);
             }
 
-            window.localStorage.setItem(
-                "favoriteIds",
-                JSON.stringify([1, 2, 3])
-            );
+            localStorage.setItem("favoriteIds", JSON.stringify(favoriteIds));
         },
-        // onNewNote() {
-        //     this.notes.push(this.message);
-        //     this.message = "";
-        //     this.saveToLocalStorage();
-        // },
-        // saveToLocalStorage() {
-        //     const jsonNotes = JSON.stringify(this.notes);
-        //     localStorage.setItem("notes", jsonNotes);
-        // },
-        // getFromLocalStorage() {
-        //     const jsonNotes = localStorage.getItem("notes");
-        //     this.notes = JSON.parse(jsonNotes);
-        // },
-        // updateNote() {
-        //     this.notes[this.noteId] = this.editNote;
-        //     this.modalVisible = false;
-        //     this.saveToLocalStorage();
-        // },
-        // deleteAll() {
-        //     this.notes = [];
-        //     this.saveToLocalStorage();
-        // },
     },
 };
 </script>

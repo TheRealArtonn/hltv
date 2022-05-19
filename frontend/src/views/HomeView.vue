@@ -26,7 +26,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: true,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 1,
+                                name: "Astrali",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                     {
                         id: 2,
@@ -35,7 +48,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: true,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 4,
+                                name: "G2",
+                            },
+                            {
+                                id: 1,
+                                name: "Astrali",
+                            },
+                            {
+                                id: 5,
+                                name: "CatEvil",
+                            },
+                        ],
                     },
                     {
                         id: 3,
@@ -44,7 +70,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 6,
+                                name: "NKT",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                     {
                         id: 4,
@@ -53,7 +92,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 6,
+                                name: "NKT",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                     {
                         id: 5,
@@ -62,7 +114,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 6,
+                                name: "NKT",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                 ],
                 upcoming: [
@@ -73,7 +138,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: true,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 6,
+                                name: "NKT",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                     {
                         id: 7,
@@ -82,7 +160,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 6,
+                                name: "NKT",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                     {
                         id: 8,
@@ -91,7 +182,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 6,
+                                name: "NKT",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                     {
                         id: 9,
@@ -100,7 +204,20 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
-                        teams: ["Astrali", "Bøvse"],
+                        teams: [
+                            {
+                                id: 6,
+                                name: "NKT",
+                            },
+                            {
+                                id: 2,
+                                name: "ENCE",
+                            },
+                            {
+                                id: 3,
+                                name: "Cloud9",
+                            },
+                        ],
                     },
                 ],
             },

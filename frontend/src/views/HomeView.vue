@@ -26,6 +26,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: true,
+                        teams: ["Astrali", "Bøvse"],
                     },
                     {
                         id: 2,
@@ -34,6 +35,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: true,
+                        teams: ["Astrali", "Bøvse"],
                     },
                     {
                         id: 3,
@@ -42,6 +44,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
+                        teams: ["Astrali", "Bøvse"],
                     },
                     {
                         id: 4,
@@ -50,6 +53,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
+                        teams: ["Astrali", "Bøvse"],
                     },
                     {
                         id: 5,
@@ -58,6 +62,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
+                        teams: ["Astrali", "Bøvse"],
                     },
                 ],
                 upcoming: [
@@ -68,6 +73,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: true,
+                        teams: ["Astrali", "Bøvse"],
                     },
                     {
                         id: 7,
@@ -76,6 +82,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
+                        teams: ["Astrali", "Bøvse"],
                     },
                     {
                         id: 8,
@@ -84,6 +91,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
+                        teams: ["Astrali", "Bøvse"],
                     },
                     {
                         id: 9,
@@ -92,6 +100,7 @@ export default {
                         text: "Europe (Online) | May 23rd - Jun 25th",
                         flag: "",
                         relevant: false,
+                        teams: ["Astrali", "Bøvse"],
                     },
                 ],
             },

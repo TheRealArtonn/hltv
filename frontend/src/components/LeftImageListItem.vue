@@ -1,3 +1,4 @@
+//Developed by Arton
 <template>
     <div class="list-item" :class="this.selected && 'list-item--selected'">
         <div class="list-item__left-image">
@@ -10,7 +11,13 @@
                 </h4>
                 <div
                     class="title-container__favorit"
-                    v-on:click.stop="$emit('favoritId', this.item.id)"
+                    :class="
+                        favoritClicked && 'title-container__favorit--active'
+                    "
+                    v-on:click.stop="
+                        $emit('favoritId', this.item.id),
+                            onClickSelectFavorit(this.item.id)
+                    "
                 ></div>
             </div>
             <div class="text-box__text-container">
@@ -29,9 +36,21 @@ export default {
     emits: ["favoritId"],
     props: ["item", "selected"],
     data: function () {
-        return {};
+        return {
+            favoritClicked: false,
+        };
     },
-    methods: {},
+    methods: {
+        onClickSelectFavorit(value) {
+            const favoriteIds =
+                JSON.parse(localStorage.getItem("favoriteIds")) || [];
+
+            this.favoritClicked = favoriteIds.includes(value);
+        },
+    },
+    beforeMount() {
+        this.onClickSelectFavorit(this.item.id);
+    },
 };
 </script>
 

@@ -1,3 +1,4 @@
+//Developed by Arton
 <template>
     <div class="module">
         <h2 class="module__header">{{ moduleName }}</h2>

@@ -58,4 +58,9 @@ export default {
 <style lang="scss" scoped>
 //Import needed css partials, in this case we needed the variables.
 @import "@/assets/styles/_variables.scss";
+
+.list-item--selected .title-container__favorit--active,
+.list-item--selected .title-container__favorit:hover {
+    background-image: url(@/assets/img/icons/favorit-white-active.svg);
+}
 </style>

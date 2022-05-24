@@ -19,7 +19,6 @@ export default {
     name: "HomeView",
     data: function () {
         return {
-            value: "pis",
             itemList: EventsJsonFile,
         };
     },

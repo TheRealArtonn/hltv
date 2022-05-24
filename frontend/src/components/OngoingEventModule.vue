@@ -2,23 +2,23 @@
     <div class="module">
         <h2 class="module__header">{{ moduleName }}</h2>
         <div class="module__body">
-            <h3 class="body__title">Ongoing events</h3>
-            <div class="body__unfocused-title body__border-above">
-                Relevant to you
-            </div>
-            {{ value }}
+            <figure class="body__image">
+                <img
+                    :src="require('@/assets/img/banners/intel-esl-2022.webp')"
+                    alt=""
+                />
+            </figure>
         </div>
-        <div class="module__footer">Show more</div>
     </div>
 </template>
 
 <script>
 export default {
     name: "TryModule",
-    props: ["value"],
+    props: [],
     data: function () {
         return {
-            moduleName: "Pis lort",
+            moduleName: "Text to be inputted",
         };
     },
 };

@@ -1,0 +1,204 @@
+{
+    "ongoing": [
+        {
+            "id": 1,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier 1",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": true,
+            "teams": [
+                {
+                    "id": 1,
+                    "name": "Astrali"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier 1",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": true,
+            "teams": [
+                {
+                    "id": 4,
+                    "name": "G2"
+                },
+                {
+                    "id": 1,
+                    "name": "Astrali"
+                },
+                {
+                    "id": 5,
+                    "name": "CatEvil"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier 2",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": false,
+            "teams": [
+                {
+                    "id": 6,
+                    "name": "NKT"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier 2",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": false,
+            "teams": [
+                {
+                    "id": 6,
+                    "name": "NKT"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier 2",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": false,
+            "teams": [
+                {
+                    "id": 6,
+                    "name": "NKT"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        }
+    ],
+    "upcoming": [
+        {
+            "id": 6,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": true,
+            "teams": [
+                {
+                    "id": 6,
+                    "name": "NKT"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": false,
+            "teams": [
+                {
+                    "id": 6,
+                    "name": "NKT"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": false,
+            "teams": [
+                {
+                    "id": 6,
+                    "name": "NKT"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "img": "republic-league-small.jpg",
+            "title": "Republeague Season 3 Closed Qualifier",
+            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "flag": "",
+            "relevant": false,
+            "teams": [
+                {
+                    "id": 6,
+                    "name": "NKT"
+                },
+                {
+                    "id": 2,
+                    "name": "ENCE"
+                },
+                {
+                    "id": 3,
+                    "name": "Cloud9"
+                }
+            ]
+        }
+    ]
+}

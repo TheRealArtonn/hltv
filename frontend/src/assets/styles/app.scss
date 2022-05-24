@@ -11,8 +11,11 @@
     box-sizing: border-box;
 }
 
-.grid {
+.wrapper {
     width: 1400px;
+}
+.grid {
+    width: 100%;
     height: auto;
     background-color: var.$bg-color;
     display: grid;

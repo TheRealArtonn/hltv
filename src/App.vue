@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <NavModule />
+    <div class="wrapper">
+        <nav-module />
 
-        <div class="wrapper">
+        <div class="wrapper__content">
             <router-view />
         </div>
     </div>

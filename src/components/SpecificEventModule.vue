@@ -11,9 +11,7 @@ export default {
     name: "SpecificEventModule",
     props: ["value"],
     data: function () {
-        return {
-            moduleName: "Pis lort",
-        };
+        return {};
     },
     components: { OngoingEventModule },
 };
@@ -31,6 +29,7 @@ export default {
 }
 
 .grid__item--ongoingevent {
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
 }
 </style>

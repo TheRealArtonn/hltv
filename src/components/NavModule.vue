@@ -44,6 +44,7 @@
                 >Fantasy</router-link
             >
         </nav>
+        <!-- Ser rigtig godt ud, men siden i bruger både en input og en button ville jeg gøre parent til et <form class="header__searchbar"></form> element -->
         <div class="header__searchbar">
             <input
                 class="header__searchbar-input"
@@ -58,7 +59,10 @@
                 />
             </button>
         </div>
+        <!-- Vi skal nok have sat nogle globale genbrugelige knapper, så de ikke blive så specifikke, med mindre de skal se meget specifik ud på et bestemt element. -->
         <div class="header__login-btn">Login</div>
+
+        <!-- Personligt ville jeg gøre ikonet til et css element, som et background image. -->
         <div class="header__settings">
             <img
                 class="header__settings-icon"
@@ -107,6 +111,8 @@ export default {
         // height: 80px;
         .header__nav-anchor {
             // change to 1.6 when root is 10 px instead of 16 in font size
+
+            //Borders skal gerne være 1px, så det bliver ensformigt.
             border-right: 2px $element-border-color solid;
             padding: 30px 20px;
 
@@ -120,6 +126,7 @@ export default {
         }
     }
 
+    //Pænt sat op
     .header__searchbar {
         display: flex;
         justify-content: center;
@@ -128,7 +135,7 @@ export default {
         .header__searchbar-input {
             height: 38px;
             width: 150px;
-
+            //mellemrum????????? O_O
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             border: 2px $element-border-color solid;
@@ -141,7 +148,7 @@ export default {
         .header__searchbar-btn {
             height: 38px;
             width: 20px;
-
+            // !!! O_O
             background-color: $element-border-color;
             border: 2px $element-border-color solid;
             border-left: none;
@@ -150,18 +157,20 @@ export default {
         }
     }
 
+    // når vi laver generelle knapper, som også har ikoner ville jeg anbefalde at bruge background-image: url(). Så bliver ikonet mere end del af elementet, og kan kontrollers nemt.
+    // Laver man det, som et img tag kan man nemlig højreklikke og tryk gem billede hehe.
     .header__login-btn {
         margin: 0 20px;
-
+        // O
         height: 38px;
         width: 103px;
-
+        // _
         display: flex;
         justify-content: center;
         align-items: center;
-
+        // O
         text-align: center;
-
+        // !!
         border: 2px $header-gradient-background-color solid;
         border-radius: 5px;
 

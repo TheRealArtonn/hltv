@@ -213,3 +213,17 @@
         background-color: var.$element-button-hover;
     }
 }
+
+.toggle {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid var.$element-border-color;
+    display: flex;
+    flex-direction: row;
+
+    .toggle__option {
+        width: auto;
+        height: 40px;
+        display: flex;
+    }
+}

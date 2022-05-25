@@ -63,6 +63,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/_variables.scss";
 
+//mangler nesting
 .header {
     display: flex;
     width: 100%;

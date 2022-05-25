@@ -13,10 +13,16 @@
 
 .wrapper {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .wrapper__content {
     width: 1400px;
+    background-color: var.$bg-color;
+    display: flex;
+    justify-content: center;
 }
 
 .grid {

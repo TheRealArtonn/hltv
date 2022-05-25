@@ -11,7 +11,7 @@
         <!-- Vi genbruger nav strukturen i footeren, så det ville være smart at gøre den general
          i stedet for "header__nav", så bare "nav" så kan styleing bare copy pastes -->
         <nav class="header__nav">
-            <!-- I stedet for anchor ville jeg nok bare kalde det nav__link -->
+            <!-- I stedet for anchor ville jeg nok bare kalde det nav__link for den globale genbrug. Den samme struktur findes jo i footeren -->
             <router-link class="header__nav-anchor" to="/">Home</router-link>
             <router-link class="header__nav-anchor" to="/news"
                 >News</router-link

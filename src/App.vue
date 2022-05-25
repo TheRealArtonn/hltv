@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavModule />
+        <nav-module />
 
         <div class="wrapper">
             <router-view />

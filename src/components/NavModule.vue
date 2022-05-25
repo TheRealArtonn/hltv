@@ -1,13 +1,17 @@
 <template>
     <header class="header">
         <div class="header__logo">
+            <!-- Hvad fuck er image fluid -->
             <img
                 class="header__logo-img-fluid"
                 src="../assets/img/nav-logo.svg"
                 alt="hltv logo"
             />
         </div>
+        <!-- Vi genbruger nav strukturen i footeren, så det ville være smart at gøre den general
+         i stedet for "header__nav", så bare "nav" så kan styleing bare copy pastes -->
         <nav class="header__nav">
+            <!-- I stedet for anchor ville jeg nok bare kalde det nav__link -->
             <router-link class="header__nav-anchor" to="/">Home</router-link>
             <router-link class="header__nav-anchor" to="/news"
                 >News</router-link
@@ -78,6 +82,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/_variables.scss";
 
+//mangler nesting
 .header {
     display: flex;
     width: 100%;

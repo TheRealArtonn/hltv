@@ -120,7 +120,7 @@ export default {
 
             font-size: 1rem;
             text-decoration: none;
-            color: $secoundary-font-color;
+            color: $primary-font-color;
 
             &:last-child {
                 border-right: none;

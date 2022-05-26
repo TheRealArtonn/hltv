@@ -62,7 +62,7 @@
 
         <!-- Jeg ville nok også lave en parent til alt interactables på højre side af headeren. F.eks <div class="header__interactables">knapper og ikoner..</div> -->
         <!-- Vi skal nok have sat nogle globale genbrugelige knapper, så de ikke blive så specifikke, med mindre de skal se meget specifik ud på et bestemt element. -->
-        <div class="header__login-btn">Login</div>
+        <div class="header__login-btn" @click="$emit('login', true)">Login</div>
 
         <!-- Personligt ville jeg gøre ikonet til et css element, som et background image. -->
         <div class="header__settings">
@@ -78,9 +78,15 @@
 <script>
 export default {
     name: "NavModule",
+    emits: ["login"],
     props: ["value"],
     data: function () {
         return {};
+    },
+    methods: {
+        Onclicklogin() {
+            console.log("hej");
+        },
     },
 };
 </script>
@@ -120,7 +126,7 @@ export default {
 
             font-size: 1.6rem;
             text-decoration: none;
-            color: $secoundary-font-color;
+            color: $primary-font-color;
 
             &:last-child {
                 border-right: none;

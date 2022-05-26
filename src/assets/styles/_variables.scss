@@ -1,25 +1,25 @@
-// TO-DO: colors in own colours partial
+$main-color: #2d6da3;
 
-$primary-font-color: #fdfdfd;
-// TO-DO: secondary*
-$secoundary-font-color: #353535;
+$primary-font-color: #353535;
+$secondary-font-color: #fdfdfd;
 $unfocused-font-color: #585858;
 
 $element-background-color: #ffffff;
 $element-border-color: #efefef;
-
 $element-button-color: #fcfcfc;
 $element-button-hover: #eef4f9;
 
-// TO-DO: rename, no longer a gradient color (is now main color)
-$header-gradient-background-color: #2d6da3;
+$list-select-bg: #edf6fe;
+$list-select-border: #b2d8f9;
+
+$bg-color: #e5e7ea;
 
 $general-padding: 15px;
 $secoundary-padding: 20px;
 $tertiary-padding: 35px;
 
-$list-select-bg: #edf6fe;
-$list-select-border: #b2d8f9;
-
 $base-font-rem-size: 10px;
-$bg-color: #e5e7ea;
+
+//Legacy - pls keep
+
+$header-gradient-background-color: $main-color;

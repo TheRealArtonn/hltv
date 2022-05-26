@@ -36,6 +36,11 @@
     width: 100%;
     height: 100%;
     background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
 .modal {
     padding: 15px;
@@ -44,8 +49,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    position: absolute;
 
     .modal__logo {
         padding: 15px;

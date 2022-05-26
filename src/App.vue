@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <login-modal :modal="loginModalValue" />
+        <login-modal :modal="loginModalValue" @closedLogin="onClickModal" />
         <nav-module @login="onClickModal" />
 
         <div class="wrapper__content">
@@ -17,7 +17,6 @@ export default {
     data: function () {
         return {
             currentPreset: 0,
-            quitModalValue: true,
             loginModalValue: false,
         };
     },

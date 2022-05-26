@@ -1,5 +1,9 @@
 <template>
-    <div class="modal-container" v-show="modal">
+    <div
+        class="modal-container"
+        v-show="modal"
+        @click.self="$emit('closedLogin', false)"
+    >
         <div class="modal">
             <div class="modal__logo">
                 <img src="../assets/img/hltv-logo-text.svg" alt="Hltv logo" />
@@ -33,6 +37,7 @@
 <script>
 export default {
     name: "LoginModal",
+    emits: ["closedLogin"],
     props: ["modal"],
     data: function () {
         return {};

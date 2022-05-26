@@ -120,7 +120,7 @@
         &--selected,
         &--selected:hover {
             background-color: var.$header-gradient-background-color;
-            color: var.$primary-font-color;
+            color: var.$secondary-font-color;
             border-top: 1px solid var.$list-select-border;
             border-bottom: 1px solid var.$list-select-border;
         }

@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <section class="footer__primary">
-            <nav class="footer__nav wrapper__content">
+            <nav class="footer__nav">
                 <router-link class="footer__nav-link" to="/">Jobs</router-link>
                 <router-link class="footer__nav-link" to="/contact"
                     >Contact</router-link
@@ -55,7 +55,7 @@
                 </section>
             </nav>
         </section>
-        <section class="footer__secondary wrapper__content">
+        <section class="footer__secondary">
             <p class="footer__txt">18+ Bet Reponsibly</p>
             <p class="footer__txt"><b>Be</b>Gamble <b>Aware</b>.org</p>
         </section>
@@ -85,6 +85,8 @@ export default {
         border-bottom: 1px $element-border-color solid;
         .footer__nav {
             height: 80px;
+            width: 1400px;
+            display: flex;
             font-size: 1.6rem;
 
             align-items: center;
@@ -182,6 +184,9 @@ export default {
     .footer__secondary {
         padding: 50px 0 0 0;
         font-size: 1.6rem;
+
+        display: flex;
+        width: 1400px;
 
         align-items: center;
         justify-content: start;

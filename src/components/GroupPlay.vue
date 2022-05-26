@@ -5,12 +5,12 @@
             <table class="body__table">
                 <thead>
                     <tr>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
+                        <th>Group Stage</th>
+                        <th>M</th>
+                        <th>RW</th>
+                        <th>RL</th>
+                        <th>RD</th>
+                        <th>Record</th>
                     </tr>
                 </thead>
                 <tbody>

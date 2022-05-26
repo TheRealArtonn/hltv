@@ -1,7 +1,7 @@
 <template>
-    <div class="module module__body--no-more">
+    <div class="module">
         <h2 class="module__header">{{ moduleName }}</h2>
-        <div class="module__body">
+        <div class="module__body module__body--no-more">
             <table class="body__table">
                 <thead>
                     <tr>

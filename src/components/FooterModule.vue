@@ -94,7 +94,7 @@ export default {
             background-color: $element-background-color;
             .footer__nav-link {
                 text-decoration: none;
-                color: $secoundary-font-color;
+                color: $primary-font-color;
                 border-right: 1px $element-border-color solid;
                 padding: 30px 20px;
                 &:first-child {

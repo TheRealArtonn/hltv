@@ -1,11 +1,13 @@
 <template>
     <div class="events-preset grid grid--two-columns">
         <ongoing-event-module class="grid__item grid__item--ongoingevent" />
+        <group-play class="grid__item grid__item--groupplay" />
     </div>
 </template>
 
 <script>
 import OngoingEventModule from "@/components/OngoingEventModule.vue";
+import GroupPlay from "@/components/GroupPlay.vue";
 
 export default {
     name: "SpecificEventModule",
@@ -13,7 +15,7 @@ export default {
     data: function () {
         return {};
     },
-    components: { OngoingEventModule },
+    components: { OngoingEventModule, GroupPlay },
 };
 </script>
 
@@ -31,5 +33,10 @@ export default {
 .grid__item--ongoingevent {
     grid-column: 1 / span 2;
     grid-row: 1 / span 4;
+}
+
+.grid__item--groupplay {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 4;
 }
 </style>

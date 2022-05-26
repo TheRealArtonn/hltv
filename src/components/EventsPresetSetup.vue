@@ -10,10 +10,10 @@
 
 <script>
 import EventModule from "@/components/EventModule.vue";
+import SpecificEventModule from "./SpecificEventModule.vue";
 
 //Henter json filen, med data til brug. Længere nede vil du finde itemList, som tager imod jsonfil indhold.
 import EventsJsonFile from "@/assets/json/events.json";
-import SpecificEventModule from "./SpecificEventModule.vue";
 
 export default {
     name: "EventsPresetSetup",

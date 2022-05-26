@@ -118,7 +118,7 @@ export default {
             border-right: 2px $element-border-color solid;
             padding: 30px 20px;
 
-            font-size: 1rem;
+            font-size: 1.6rem;
             text-decoration: none;
             color: $secoundary-font-color;
 
@@ -156,6 +156,7 @@ export default {
             border-left: none;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
+            cursor: pointer;
         }
     }
 
@@ -176,14 +177,21 @@ export default {
         border: 2px $header-gradient-background-color solid;
         border-radius: 5px;
 
-        font-size: 1rem;
+        font-size: 1.6rem;
         color: $header-gradient-background-color;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $header-gradient-background-color;
+            color: $primary-font-color;
+        }
     }
 
     .header__settings {
         .header__settings-icon {
             width: 34px;
             height: auto;
+            cursor: pointer;
         }
     }
 }

@@ -5,11 +5,13 @@
         <div class="wrapper__content">
             <router-view />
         </div>
+        <footer-module />
     </div>
 </template>
 
 <script>
 import NavModule from "@/components/NavModule.vue";
+import FooterModule from "./components/FooterModule.vue";
 
 export default {
     data: function () {
@@ -17,7 +19,7 @@ export default {
             currentPreset: 0,
         };
     },
-    components: { NavModule },
+    components: { NavModule, FooterModule },
     methods: {},
 };
 </script>

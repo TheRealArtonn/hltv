@@ -1,0 +1,30 @@
+@use "variables" as var;
+
+.btn {
+    width: auto;
+    height: 50px;
+    // font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    // color: var.$default-button-text-color;
+    line-height: 51px;
+    // background-color: var.$default-button-bg-color;
+    border: none;
+    border-radius: 10px;
+    padding: 0 40px;
+    cursor: pointer;
+
+    &:hover {
+        // background-color: var.$default-button-hover-color;
+        cursor: pointer;
+    }
+
+    &--download {
+        // background-image: url(@/assets/img/icons/download.svg);
+        background-size: 32px;
+        background-repeat: no-repeat;
+        background-position: 140px center;
+        padding: 0 65px 0 40px;
+    }
+}

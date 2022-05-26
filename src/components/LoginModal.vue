@@ -1,27 +1,42 @@
 <template>
-    <div class="modal">
-        <div class="modal__logo">
-            <img src="../assets/img/hltv-logo-text.svg" alt="Hltv logo" />
-        </div>
-        <form action="" class="modal__form">
-            <input type="username" class="form__input" placeholder="Username" />
-            <input type="password" class="form__input" placeholder="Password" />
-            <button class="form__button">Login</button>
-            <div class="modal__check">
-                <div class="check__wrapper">
-                    <input type="checkbox" class="modal__checkbox" />
-                    <label class="checkbox__label">Remember me</label>
-                </div>
-                <p><a href="#">Forgot password?</a></p>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal__logo">
+                <img src="../assets/img/hltv-logo-text.svg" alt="Hltv logo" />
             </div>
-            <hr />
-            <button class="form__signup">signup</button>
-        </form>
+            <form action="" class="modal__form">
+                <input
+                    type="username"
+                    class="form__input"
+                    placeholder="Username"
+                />
+                <input
+                    type="password"
+                    class="form__input"
+                    placeholder="Password"
+                />
+                <button class="form__button">Login</button>
+                <div class="modal__check">
+                    <div class="check__wrapper">
+                        <input type="checkbox" class="modal__checkbox" />
+                        <label class="checkbox__label">Remember me</label>
+                    </div>
+                    <p><a href="#">Forgot password?</a></p>
+                </div>
+                <hr />
+                <button class="form__signup">signup</button>
+            </form>
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 @import "@/assets/styles/_variables.scss";
+.modal-container {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
 .modal {
     padding: 15px;
     background-color: #ffffff;
@@ -75,14 +90,14 @@
 }
 
 .form__signup {
-    border: 2px solid $header-gradient-background-color;
+    border: 2px solid $main-color;
     padding: 15px;
     border-radius: 5px;
     color: $main-color;
     transition: 0.2s;
 
     &:hover {
-        background: $header-gradient-background-color;
+        background: $main-color;
         color: #ffffff;
     }
 }

@@ -1,9 +1,9 @@
 <template>
     <div class="wrapper">
+        <login-modal />
         <nav-module />
 
         <div class="wrapper__content">
-            <login-modal />
             <router-view />
         </div>
     </div>

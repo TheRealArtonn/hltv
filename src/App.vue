@@ -3,6 +3,7 @@
         <nav-module />
 
         <div class="wrapper__content">
+            <login-modal />
             <router-view />
         </div>
     </div>
@@ -10,6 +11,7 @@
 
 <script>
 import NavModule from "@/components/NavModule.vue";
+import LoginModal from "./components/LoginModal.vue";
 
 export default {
     data: function () {
@@ -17,7 +19,7 @@ export default {
             currentPreset: 0,
         };
     },
-    components: { NavModule },
+    components: { NavModule, LoginModal },
     methods: {},
 };
 </script>

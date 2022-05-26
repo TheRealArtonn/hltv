@@ -41,7 +41,7 @@
         gap: 15px;
 
         .form__input {
-            border: 2px solid $header-gradient-background-color;
+            border: 2px solid $main-color;
             border-radius: 5px;
             padding: 15px;
             height: 50px;
@@ -62,7 +62,7 @@
 }
 
 .form__button {
-    background: $header-gradient-background-color;
+    background: $main-color;
     padding: 15px;
     border-radius: 5px;
     color: $primary-font-color;
@@ -78,7 +78,7 @@
     border: 2px solid $header-gradient-background-color;
     padding: 15px;
     border-radius: 5px;
-    color: $header-gradient-background-color;
+    color: $main-color;
     transition: 0.2s;
 
     &:hover {

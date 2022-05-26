@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-container">
+    <div class="modal-container" v-show="modal">
         <div class="modal">
             <div class="modal__logo">
                 <img src="../assets/img/hltv-logo-text.svg" alt="Hltv logo" />
@@ -24,11 +24,22 @@
                     <p><a href="#">Forgot password?</a></p>
                 </div>
                 <hr />
-                <button class="form__signup">signup</button>
+                <button class="form__signup">Sign up</button>
             </form>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: "LoginModal",
+    props: ["modal"],
+    data: function () {
+        return {};
+    },
+    methods: {},
+};
+</script>
 
 <style lang="scss" scoped>
 @import "@/assets/styles/_variables.scss";
@@ -49,6 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 
     .modal__logo {
         padding: 15px;
@@ -83,7 +95,7 @@
     background: $main-color;
     padding: 15px;
     border-radius: 5px;
-    color: $primary-font-color;
+    color: #ffffff;
     border: 0;
     transition: 0.2s;
 

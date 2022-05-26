@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
-        <login-modal />
-        <nav-module />
+        <login-modal :modal="loginModalValue" />
+        <nav-module @login="onClickModal" />
 
         <div class="wrapper__content">
             <router-view />
@@ -17,10 +17,17 @@ export default {
     data: function () {
         return {
             currentPreset: 0,
+            quitModalValue: true,
+            loginModalValue: false,
         };
     },
     components: { NavModule, LoginModal },
-    methods: {},
+    methods: {
+        onClickModal(value) {
+            this.loginModalValue = value;
+            console.log(value);
+        },
+    },
 };
 </script>
 

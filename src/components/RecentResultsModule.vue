@@ -1,5 +1,5 @@
 <template>
-    <div class="module grid__item--recentresults">
+    <div class="module">
         <h2 class="module__header">Recent Results</h2>
         <div class="module__body">
             <div class="body__unfocused-title body__border-above">
@@ -92,10 +92,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.grid__item--recentresults {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 7;
-}
 .team-list {
     display: flex;
     align-items: center;

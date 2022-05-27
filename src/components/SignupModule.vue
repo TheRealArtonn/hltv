@@ -1,5 +1,5 @@
 <template>
-    <div class="module grid__item--signup">
+    <div class="module">
         <h2 class="module__header">{{ moduleName }}</h2>
         <div class="module__body module__body--no-more">
             <div class="signup__information">
@@ -44,7 +44,7 @@
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Confirm Password"
+                            placeholder="Confirm"
                         />
                     </div>
                 </form>
@@ -96,16 +96,12 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/_variables.scss";
 @import "@/assets/styles/_input.scss";
-.grid__item--signup {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 8;
 
-    .signup {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .form__input {

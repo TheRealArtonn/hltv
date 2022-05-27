@@ -26,25 +26,25 @@
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Email"
                         />
 
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Confirm email"
                         />
                     </div>
                     <div class="input__field">
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Password"
                         />
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Confirm Password"
                         />
                     </div>
                 </form>
@@ -87,7 +87,7 @@ export default {
     props: [],
     data: function () {
         return {
-            moduleName: "Signup",
+            moduleName: "Sign up",
         };
     },
 };

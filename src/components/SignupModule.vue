@@ -74,7 +74,7 @@
                         You can at all times read the full and latest terms here
                         and privacy policy here.
                     </p>
-                    <router-link to="/Signup" class="form__button">
+                    <router-link to="/preference" class="form__button">
                         Sign up
                     </router-link>
                 </div>

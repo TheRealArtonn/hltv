@@ -6,6 +6,7 @@
         <div class="wrapper__content">
             <router-view />
         </div>
+
         <footer-module />
     </div>
 </template>

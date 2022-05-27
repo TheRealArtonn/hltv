@@ -66,11 +66,13 @@
 
         <!-- Personligt ville jeg gøre ikonet til et css element, som et background image. -->
         <div class="header__settings">
-            <img
-                class="header__settings-icon"
-                src="../assets/img/icons/profile-settings.svg"
-                alt="youoyoyoyo"
-            />
+            <router-link to="/settings">
+                <img
+                    class="header__settings-icon"
+                    src="../assets/img/icons/profile-settings.svg"
+                    alt="youoyoyoyo"
+                />
+            </router-link>
         </div>
     </header>
 </template>
@@ -122,7 +124,7 @@ export default {
 
             //Borders skal gerne være 1px, så det bliver ensformigt.
             border-right: 2px $element-border-color solid;
-            padding: 30px 20px;
+            padding: 30px 15px;
 
             font-size: 1.6rem;
             text-decoration: none;

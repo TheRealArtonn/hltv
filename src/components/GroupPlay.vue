@@ -24,11 +24,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="td--align-left td--bold">
-                            <div class="img-container">
-                                <img src="" alt="" />
-                            </div>
-                            Vitality
+                        <td class="td--align-left td--bold td--icon">
+                            <img
+                                class="img"
+                                src="@/assets/img/teams/team-1.jpg"
+                                alt=""
+                            />
+                            Faze
                         </td>
                         <td>3</td>
                         <td>81</td>
@@ -37,7 +39,14 @@
                         <td>3 - 0</td>
                     </tr>
                     <tr>
-                        <td class="td--align-left td--bold">G2</td>
+                        <td class="td--align-left td--bold td--icon">
+                            <img
+                                class="img"
+                                src="@/assets/img/teams/team-2.jpg"
+                                alt=""
+                            />
+                            Na'vi
+                        </td>
                         <td>4</td>
                         <td>81</td>
                         <td>75</td>
@@ -45,28 +54,49 @@
                         <td>3 - 1</td>
                     </tr>
                     <tr>
-                        <td class="td--align-left td--bold">Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                        <td class="td--align-left td--bold td--icon">
+                            <img
+                                class="img"
+                                src="@/assets/img/teams/team-3.jpg"
+                                alt=""
+                            />
+                            Ence
+                        </td>
+                        <td>4</td>
+                        <td>81</td>
+                        <td>75</td>
+                        <td>38</td>
+                        <td>3 - 1</td>
                     </tr>
                     <tr>
-                        <td class="td--align-left td--bold">Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                        <td class="td--align-left td--bold td--icon">
+                            <img
+                                class="img"
+                                src="@/assets/img/teams/team-4.jpg"
+                                alt=""
+                            />
+                            G2
+                        </td>
+                        <td>4</td>
+                        <td>81</td>
+                        <td>75</td>
+                        <td>38</td>
+                        <td>3 - 1</td>
                     </tr>
                     <tr>
-                        <td class="td--align-left td--bold">Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                        <td class="td--align-left td--bold td--icon">
+                            <img
+                                class="img"
+                                src="@/assets/img/teams/team-5.jpg"
+                                alt=""
+                            />
+                            Vitality
+                        </td>
+                        <td>4</td>
+                        <td>81</td>
+                        <td>75</td>
+                        <td>38</td>
+                        <td>3 - 1</td>
                     </tr>
                 </tbody>
             </table>
@@ -143,5 +173,18 @@ td.td--bold {
 
 .body__table thead {
     background-color: #f9f9f9;
+}
+
+.td--icon {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-right: 10px;
 }
 </style>

@@ -26,25 +26,25 @@
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Email"
                         />
 
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Confirm email"
                         />
                     </div>
                     <div class="input__field">
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Password"
                         />
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Confirm Password"
                         />
                     </div>
                 </form>
@@ -98,7 +98,7 @@ export default {
 @import "@/assets/styles/_input.scss";
 .grid__item--signup {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 14;
+    grid-row: 1 / span 8;
 
     .signup {
         display: flex;
@@ -106,6 +106,10 @@ export default {
         align-items: center;
         width: 100%;
     }
+}
+
+.form__input {
+    width: 415px;
 }
 .form__button {
     background: $main-color;

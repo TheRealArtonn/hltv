@@ -2,19 +2,45 @@
     <div class="module grid__item--signup">
         <h2 class="module__header">{{ moduleName }}</h2>
         <div class="module__body module__body--no-more">
-            <div class="signup__process">
-                <p class="signup__process__text">
+            <div class="signup-process">
+                <p class="signup-process__text">
                     Thank you for signing to HLTV.org
                 </p>
-                <p class="signup__process__text">
+                <p class="signup-process__text">
                     We only need you to fill in some information before your
                     account is ready.
                 </p>
             </div>
 
-            <h3 class="body__title">Ongoing events</h3>
-            <div class="signup__section">
-                <form action=""></form>
+            <h3 class="body__title">Personal information</h3>
+            <div class="signup">
+                <form action="" class="signup__input">
+                    <div class="input__username">
+                        <input type="text" placeholder="Username" />
+                    </div>
+                    <div class="input__field">
+                        <input
+                            class="form__input"
+                            type="text"
+                            placeholder="Username"
+                        />
+                        <input
+                            class="form__input"
+                            type="text"
+                            placeholder="Username"
+                        />
+                        <input
+                            class="form__input"
+                            type="text"
+                            placeholder="Username"
+                        />
+                        <input
+                            class="form__input"
+                            type="text"
+                            placeholder="Username"
+                        />
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -36,7 +62,7 @@ export default {
     grid-row: 1 / span 4;
 }
 
-.signup__process {
+.signup-process {
     padding: 10px;
 }
 

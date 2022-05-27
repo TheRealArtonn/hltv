@@ -90,7 +90,7 @@ export default {
             font-size: 1.6rem;
 
             align-items: center;
-            justify-content: start;
+            justify-content: flex-start;
 
             margin: auto;
             background-color: $element-background-color;
@@ -189,7 +189,7 @@ export default {
         width: 1400px;
 
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
 
         margin: auto;
         background-color: $element-background-color;

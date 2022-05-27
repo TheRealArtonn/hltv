@@ -191,7 +191,7 @@ export default {
 
         &:hover {
             background-color: $header-gradient-background-color;
-            color: $primary-font-color;
+            color: $secondary-font-color;
         }
     }
 

@@ -10,7 +10,7 @@
                         class="module__options-btn"
                         v-on:click="onClickSelectPreset(0), checkPreset('news')"
                         :class="
-                            selectedLayout === 'news' &&
+                            currentPreset === 0 &&
                             'module__options-btn--selected'
                         "
                     ></div>
@@ -23,7 +23,7 @@
                             onClickSelectPreset(1), checkPreset('events')
                         "
                         :class="
-                            selectedLayout === 'events' &&
+                            currentPreset === 1 &&
                             'module__options-btn--selected'
                         "
                     ></div>
@@ -57,7 +57,7 @@ export default {
     data: function () {
         return {
             currentPreset: 0,
-            selectedLayout: "news",
+            // selectedLayout: "news",
         };
     },
     // components: { EventsPresetSetup, NewsPresetSetup },
@@ -71,6 +71,11 @@ export default {
             this.selectedLayout = value;
             console.log(value);
         },
+    },
+    beforeMount() {
+        this.currentPreset = Number(localStorage.getItem("currentPreset")) || 0;
+
+        console.log(this.currentPreset);
     },
 };
 </script>

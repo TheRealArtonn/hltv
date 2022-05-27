@@ -87,7 +87,7 @@ export default {
     props: [],
     data: function () {
         return {
-            moduleName: "Sign up",
+            moduleName: "Signup",
         };
     },
 };
@@ -98,7 +98,7 @@ export default {
 @import "@/assets/styles/_input.scss";
 .grid__item--signup {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 14;
+    grid-row: 1 / span 8;
 
     .signup {
         display: flex;
@@ -106,6 +106,10 @@ export default {
         align-items: center;
         width: 100%;
     }
+}
+
+.form__input {
+    width: 415px;
 }
 .form__button {
     background: $main-color;

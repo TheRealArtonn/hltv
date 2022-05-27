@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="module__footer">Show more</div>
+        <div class="module__footer">see all recent results</div>
     </div>
 </template>
 

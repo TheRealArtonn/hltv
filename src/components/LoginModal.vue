@@ -28,7 +28,9 @@
                     <p><a href="#">Forgot password?</a></p>
                 </div>
                 <hr />
-                <button class="form__signup">Sign up</button>
+                <router-link to="/Signup" class="form__signup">
+                    Sign up
+                </router-link>
             </form>
         </div>
     </div>
@@ -48,6 +50,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/styles/_variables.scss";
+@import "@/assets/styles/_input.scss";
 .modal-container {
     z-index: 5;
     width: 100%;
@@ -75,14 +78,6 @@ export default {
         display: flex;
         flex-direction: column;
         gap: 15px;
-
-        .form__input {
-            border: 2px solid $main-color;
-            border-radius: 5px;
-            padding: 15px;
-            height: 50px;
-            width: 400px;
-        }
 
         .modal__check {
             display: flex;
@@ -116,6 +111,9 @@ export default {
     border-radius: 5px;
     color: $main-color;
     transition: 0.2s;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
 
     &:hover {
         background: $main-color;

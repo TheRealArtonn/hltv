@@ -3,25 +3,69 @@
         <h2 class="module__header">Settings</h2>
         <div class="module__body module__body--no-more">
             <div class="body__unfocused-title body__border-above">General</div>
-            <div class="list-item">Layouts</div>
-            <div class="list-item">Themes</div>
+            <div
+                class="list-item"
+                :class="
+                    localSelectedSetting === 'layouts' && 'list-item--selected'
+                "
+                @click="emitValue('layouts')"
+            >
+                Layouts
+            </div>
+            <div
+                class="list-item"
+                :class="
+                    localSelectedSetting === 'themes' && 'list-item--selected'
+                "
+                @click="emitValue('themes')"
+            >
+                Themes
+            </div>
             <div class="body__unfocused-title body__border-above">Personal</div>
-            <div class="list-item">History</div>
-            <div class="list-item">Saved</div>
-            <div class="list-item">Favourite players</div>
-            <div class="list-item">Favourite teams</div>
-            <div class="list-item">Favourite events</div>
+            <div class="list-item" @click="emitValue('history')">History</div>
+            <div class="list-item" @click="emitValue('saved')">Saved</div>
+            <div class="list-item" @click="emitValue('players')">
+                Favourite players
+            </div>
+            <div class="list-item" @click="emitValue('teams')">
+                Favourite teams
+            </div>
+            <div class="list-item" @click="emitValue('events')">
+                Favourite events
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
+    //emits kan indejolde variabler, arrays osv
+    emits: ["selectedSetting"],
     name: "SettingsMenuModule",
     data: function () {
-        return {};
+        return {
+            localSelectedSetting: "layouts",
+        };
+    },
+    methods: {
+        emitValue(value) {
+            this.$emit("selectedSetting", value);
+            this.localSelectedSetting = value;
+        },
     },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "../assets/styles/variables";
+.list-item {
+    // maybe too big irl
+    font-size: $secondary-font-size * 2;
+    font-weight: 700;
+
+    // &:focus-within {
+    //     background-color: $main-color;
+    //     color: $secondary-font-color;
+    // }
+}
+</style>

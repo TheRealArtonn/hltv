@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="28" viewBox="0 0 37 28">
+  <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="3.451 0.545 35.559 26.91">
+      <image preserveAspectRatio="xMidYMid slice" width="42.462" height="28" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAAC2CAMAAAAvDYIaAAAAPFBMVEX///8AR3XBAEArFxsASHjGAEEAFCAAMmk1ABLv8vT78/W8ACg1NTUXGyAASnsANGz/+foXFxcRFx0qERaVYwCQAAABJUlEQVR4nO3QxwGDMAAEMCeYEkwz7L9r3gxwP2kElb7H3FvQM8T0Mh015fyVmKuNMUuZ6idlDqas7ZsiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkvFKOmnIGU642xiyl7zH3FvQMMf0PBCD+t9qXqscAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="french-flag" width="37" height="28" rx="5" fill="url(#pattern)"/>
+</svg>

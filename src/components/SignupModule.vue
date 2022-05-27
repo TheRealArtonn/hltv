@@ -2,7 +2,7 @@
     <div class="module grid__item--signup">
         <h2 class="module__header">{{ moduleName }}</h2>
         <div class="module__body module__body--no-more">
-            <div class="signup-process">
+            <div class="signup__information">
                 <p class="signup-process__text">
                     Thank you for signing to HLTV.org
                 </p>
@@ -14,33 +14,70 @@
 
             <h3 class="body__title">Personal information</h3>
             <div class="signup">
-                <form action="" class="signup__input">
+                <form action="" class="signup__information">
                     <div class="input__username">
-                        <input type="text" placeholder="Username" />
+                        <input
+                            type="text"
+                            placeholder="Username"
+                            class="form__input"
+                        />
                     </div>
                     <div class="input__field">
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
+                            placeholder="Email"
+                        />
+
+                        <input
+                            class="form__input"
+                            type="text"
+                            placeholder="Confirm email"
+                        />
+                    </div>
+                    <div class="input__field">
+                        <input
+                            class="form__input"
+                            type="text"
+                            placeholder="Password"
                         />
                         <input
                             class="form__input"
                             type="text"
-                            placeholder="Username"
-                        />
-                        <input
-                            class="form__input"
-                            type="text"
-                            placeholder="Username"
-                        />
-                        <input
-                            class="form__input"
-                            type="text"
-                            placeholder="Username"
+                            placeholder="Confirm Password"
                         />
                     </div>
                 </form>
+            </div>
+
+            <div class="signup--process">
+                <h3 class="body__title">Flag and times</h3>
+                <div class="signup__information">
+                    <p class="signup-process">
+                        Thank you for signing to HLTV.org
+                    </p>
+                    <select class="form__input">
+                        <option value="Albania">Albania</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Vietnam">Vietnam</option>
+                    </select>
+                </div>
+            </div>
+            <div class="signup--process">
+                <h3 class="body__title">Privacy and data</h3>
+                <div class="signup__information">
+                    <p class="signup-process">
+                        By creating an account on HLTV.org we will store and
+                        process data of and about you. <br />
+                        You can at all times read the full and latest terms here
+                        and privacy policy here.
+                    </p>
+                    <router-link to="/Signup" class="form__button">
+                        Sign up
+                    </router-link>
+                </div>
             </div>
         </div>
     </div>
@@ -57,16 +94,62 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/_variables.scss";
+@import "@/assets/styles/_input.scss";
 .grid__item--signup {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 4;
+    grid-row: 1 / span 8;
+
+    .signup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.form__input {
+    width: 415px;
+}
+.form__button {
+    background: $main-color;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 0;
+    transition: 0.2s;
+    text-align: center;
+    width: 165px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        background: hotpink;
+    }
 }
 
 .signup-process {
-    padding: 10px;
+    margin-bottom: 10px;
+}
+.input__field {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
 }
 
 .body__title {
     border-top: 1px solid;
+    margin-top: 15px;
+}
+
+.signup__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 15px;
+    .signup-process__text {
+        padding: 5px;
+    }
 }
 </style>

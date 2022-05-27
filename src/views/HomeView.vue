@@ -1,10 +1,5 @@
 <template>
     <div class="home">
-        <div>
-            presets:
-            <button v-on:click="onClickSelectPreset(0)">News</button
-            ><button v-on:click="onClickSelectPreset(1)">Events</button>
-        </div>
         <news-preset-setup v-if="this.currentPreset === 0" />
         <events-preset-setup v-else-if="this.currentPreset === 1" />
     </div>

@@ -28,7 +28,11 @@
                     <p><a href="#">Forgot password?</a></p>
                 </div>
                 <hr />
-                <router-link to="/Signup" class="form__signup">
+                <router-link
+                    to="/Signup"
+                    class="form__signup"
+                    @click="$emit('closedLogin', false)"
+                >
                     Sign up
                 </router-link>
             </form>

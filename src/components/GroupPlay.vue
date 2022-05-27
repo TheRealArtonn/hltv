@@ -135,9 +135,7 @@ export default {
     color: $primary-font-color;
     // background-color: $primary-font-color;
     border-collapse: collapse;
-    border-width: 1px;
-    border-color: $element-border-color;
-    border-style: solid;
+    border-bottom: 1px solid $element-border-color;
 }
 
 .body__table tr:nth-child(even) {
@@ -146,9 +144,7 @@ export default {
 
 .body__table th {
     height: 26px;
-    border-width: 1px;
-    border-color: $element-border-color;
-    border-style: solid;
+    border-bottom: 1px solid $element-border-color;
 }
 
 .body__table td {

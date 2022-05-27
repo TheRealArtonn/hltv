@@ -30,6 +30,7 @@
                 <div class="body__unfocused-title body__border-above">
                     Other
                 </div>
+
                 <h3 class="body__title">PGL</h3>
                 <div class="list-item">
                     <div class="item_team">

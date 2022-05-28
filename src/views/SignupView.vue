@@ -43,8 +43,8 @@ export default {
     grid-row: 8 / span 9;
 }
 
-.grid__item--todaymatch {
+.grid__item--toprankings {
     grid-column: 3 / span 1;
-    grid-row: 10 / span 11;
+    grid-row: 17 / span 5;
 }
 </style>

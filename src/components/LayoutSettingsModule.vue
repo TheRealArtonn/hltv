@@ -7,18 +7,20 @@
             <div class="module__options">
                 <div>
                     <div
-                        class="module__options-btn"
+                        class="module__options-btn module__options-btn--news"
                         v-on:click="onClickSelectPreset(0), checkPreset('news')"
                         :class="
                             currentPreset === 0 &&
                             'module__options-btn--selected'
                         "
                     ></div>
+
                     <h3 class="module__options-heading">news</h3>
                 </div>
+
                 <div>
                     <div
-                        class="module__options-btn"
+                        class="module__options-btn module__options-btn--events"
                         v-on:click="
                             onClickSelectPreset(1), checkPreset('events')
                         "
@@ -29,10 +31,12 @@
                     ></div>
                     <h3 class="module__options-heading">events</h3>
                 </div>
+
                 <div>
                     <div class="module__options-btn"></div>
                     <h3 class="module__options-heading">betting</h3>
                 </div>
+
                 <div>
                     <div class="module__options-btn"></div>
                     <h3 class="module__options-heading">custom</h3>

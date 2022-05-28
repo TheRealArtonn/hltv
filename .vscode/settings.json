@@ -1,6 +1,5 @@
 {
     "eslint.validate": ["vue", "html", "javascript"],
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
@@ -8,5 +7,7 @@
     "prettier.useTabs": true,
     "prettier.endOfLine": "auto",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "files.eol": "auto"
+    "files.eol": "auto",
+    "editor.formatOnSave": false,
+    "[javascript]": { "editor.formatOnSave": true }
 }

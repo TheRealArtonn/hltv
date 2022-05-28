@@ -22,15 +22,49 @@
                 Themes
             </div>
             <div class="body__unfocused-title body__border-above">Personal</div>
-            <div class="list-item" @click="emitValue('history')">History</div>
-            <div class="list-item" @click="emitValue('saved')">Saved</div>
-            <div class="list-item" @click="emitValue('players')">
+            <div
+                class="list-item"
+                :class="
+                    localSelectedSetting === 'history' && 'list-item--selected'
+                "
+                @click="emitValue('history')"
+            >
+                History
+            </div>
+            <div
+                class="list-item"
+                :class="
+                    localSelectedSetting === 'saved' && 'list-item--selected'
+                "
+                @click="emitValue('saved')"
+            >
+                Saved
+            </div>
+            <div
+                class="list-item"
+                :class="
+                    localSelectedSetting === 'players' && 'list-item--selected'
+                "
+                @click="emitValue('players')"
+            >
                 Favourite players
             </div>
-            <div class="list-item" @click="emitValue('teams')">
+            <div
+                class="list-item"
+                :class="
+                    localSelectedSetting === 'teams' && 'list-item--selected'
+                "
+                @click="emitValue('teams')"
+            >
                 Favourite teams
             </div>
-            <div class="list-item" @click="emitValue('events')">
+            <div
+                class="list-item"
+                :class="
+                    localSelectedSetting === 'events' && 'list-item--selected'
+                "
+                @click="emitValue('events')"
+            >
                 Favourite events
             </div>
         </div>
@@ -62,10 +96,5 @@ export default {
     // maybe too big irl
     font-size: $secondary-font-size * 2;
     font-weight: 700;
-
-    // &:focus-within {
-    //     background-color: $main-color;
-    //     color: $secondary-font-color;
-    // }
 }
 </style>

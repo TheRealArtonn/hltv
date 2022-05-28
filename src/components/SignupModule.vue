@@ -112,6 +112,8 @@ export default {
     padding: 15px;
     border-radius: 5px;
     color: #ffffff;
+    font-size: $btn-font-size;
+    text-decoration: none;
     border: 0;
     transition: 0.2s;
     text-align: center;
@@ -120,13 +122,15 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
     &:hover {
-        background: hotpink;
+        background: $blue-hover-color;
     }
 }
 
 .signup-process {
     margin-bottom: 10px;
+    font-size: $primary-font-size;
 }
 .input__field {
     display: flex;
@@ -144,8 +148,10 @@ export default {
     flex-direction: column;
     justify-content: left;
     padding: 15px;
+
     .signup-process__text {
         padding: 5px;
+        font-size: $primary-font-size;
     }
 }
 </style>

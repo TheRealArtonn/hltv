@@ -30,7 +30,7 @@ export default {
 @import "@/assets/styles/_variables.scss";
 .grid__item--signup {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 8;
+    grid-row: 1 / span 9;
 }
 
 .grid__item--recentresults {

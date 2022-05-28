@@ -36,7 +36,6 @@
                     PGL Major Antwerp 2022 challengers stage
                 </h3>
 
-                <h3 class="body__title">PGL</h3>
                 <div class="list-item">
                     <div class="item_team">
                         <img
@@ -85,7 +84,6 @@
             </div>
         </div>
         <div class="module__footer">SEE ALL RECENT RESULTS</div>
-        <div class="module__footer">see all recent results</div>
     </div>
 </template>
 

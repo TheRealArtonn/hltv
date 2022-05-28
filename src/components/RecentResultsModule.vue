@@ -1,5 +1,5 @@
 <template>
-    <div class="module grid__item--recentresults">
+    <div class="module">
         <h2 class="module__header">Recent Results</h2>
         <div class="module__body">
             <div class="body__unfocused-title body__border-above">
@@ -35,6 +35,8 @@
                 <h3 class="body__title">
                     PGL Major Antwerp 2022 challengers stage
                 </h3>
+
+                <h3 class="body__title">PGL</h3>
                 <div class="list-item">
                     <div class="item_team">
                         <img
@@ -83,6 +85,7 @@
             </div>
         </div>
         <div class="module__footer">SEE ALL RECENT RESULTS</div>
+        <div class="module__footer">see all recent results</div>
     </div>
 </template>
 
@@ -97,10 +100,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.grid__item--recentresults {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 7;
-}
 .team-list {
     display: flex;
     align-items: center;

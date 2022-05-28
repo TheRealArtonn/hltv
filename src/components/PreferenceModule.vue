@@ -147,10 +147,7 @@
                     You can change and add your favorite teams and players
                     anytime you want!
                 </p>
-                <router-link
-                    to="/preference"
-                    class="form__button signup-process__text"
-                >
+                <router-link to="/" class="form__button signup-process__text">
                     Set up
                 </router-link>
             </div>

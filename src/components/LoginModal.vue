@@ -25,7 +25,7 @@
                         <input type="checkbox" class="modal__checkbox" />
                         <label class="checkbox__label">Remember me</label>
                     </div>
-                    <p><a href="#">Forgot password?</a></p>
+                    <a class="modal__forgot-pw" href="#">Forgot password?</a>
                 </div>
                 <hr />
                 <router-link
@@ -57,14 +57,14 @@ export default {
 @import "@/assets/styles/_input.scss";
 .modal-container {
     z-index: 5;
-    width: 100%;
-    height: 100%;
-    background: black;
+    width: 100vw;
+    height: 100vh;
+    background: #000000dd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
 }
 .modal {
     padding: 15px;
@@ -91,6 +91,18 @@ export default {
 
             .check__wrapper {
                 align-items: center;
+
+                .checkbox__label {
+                    padding: 5px;
+                    font-size: $unfocused-font-size;
+                    color: $primary-font-color;
+                }
+            }
+
+            .modal__forgot-pw {
+                text-decoration: none;
+                color: $primary-font-color;
+                font-size: $unfocused-font-size;
             }
         }
     }
@@ -103,9 +115,10 @@ export default {
     color: #ffffff;
     border: 0;
     transition: 0.2s;
+    font-size: $btn-font-size;
 
     &:hover {
-        background: hotpink;
+        background: $blue-hover-color;
     }
 }
 
@@ -118,6 +131,7 @@ export default {
     list-style: none;
     text-decoration: none;
     text-align: center;
+    font-size: $btn-font-size;
 
     &:hover {
         background: $main-color;
@@ -125,9 +139,6 @@ export default {
     }
 }
 
-.checkbox__label {
-    padding: 5px;
-}
 hr {
     background: black;
 }

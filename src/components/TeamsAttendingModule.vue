@@ -4,6 +4,9 @@
         <div class="module__body module__body--no-more">
             <div class="module-cards">
                 <div class="module-card">
+                    <div class="module-card-selected">
+                        <div></div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -125,6 +128,7 @@ export default {
     border: 1px solid $element-border-color;
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
 
     &__img {
         width: 194px;
@@ -143,5 +147,13 @@ export default {
             font-size: $unfocused-font-size;
         }
     }
+}
+
+.module-card-selected {
+    width: 100%;
+    height: 100%;
+    border: 5px solid $main-color;
+    border-radius: 5px;
+    position: absolute;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="module">
+        <h2 class="module__header">News</h2>
         <div class="module__body">
-            <h2 class="module__header">News</h2>
             <div class="body__unfocused-title">Relevant to you</div>
             <div class="news">
                 <div class="news__item">

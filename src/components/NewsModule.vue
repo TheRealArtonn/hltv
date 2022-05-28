@@ -120,9 +120,8 @@
                 </div>
                 <div class="keywords">Keywords: Thailand, Natus Vincere</div>
             </div>
-
-            <div class="module__footer">Show more</div>
         </div>
+        <div class="module__footer">Show more</div>
     </div>
 </template>
 
@@ -139,47 +138,52 @@ export default {
 @import "@/assets/styles/_variables.scss";
 @import "@/assets/styles/app.scss";
 
-.news {
-    width: 100%;
-    // height: auto;
-    padding: $general-padding;
-    border-bottom: 1px solid $element-border-color;
-    border-top: 1px solid transparent;
-    cursor: pointer;
+.module__body {
+    overflow: hidden;
 
-    &:hover {
-        background-color: $list-select-bg;
-        border-top: 1px solid $list-select-border;
-        border-bottom: 1px solid $list-select-border;
-    }
+    .news {
+        width: 100%;
+        // height: auto;
+        padding: $general-padding;
+        border-bottom: 1px solid $element-border-color;
+        border-top: 1px solid transparent;
+        cursor: pointer;
+        overflow: hidden;
 
-    .news__item {
-        display: flex;
-        padding-left: 10px;
-
-        .news__img {
-            height: 50px;
-            width: 66px;
+        &:hover {
+            background-color: $list-select-bg;
+            border-top: 1px solid $list-select-border;
+            border-bottom: 1px solid $list-select-border;
         }
 
-        .news__info {
-            padding-left: 25px;
+        .news__item {
+            display: flex;
+            padding-left: 10px;
 
-            .news__heading {
-                font-size: 2rem;
+            .news__img {
+                height: 50px;
+                width: 66px;
             }
 
-            .news__comments {
-                font-size: $secondary-font-size;
-                font-style: italic;
+            .news__info {
+                padding-left: 25px;
 
-                padding-top: 3px;
+                .news__heading {
+                    font-size: 2rem;
+                }
+
+                .news__comments {
+                    font-size: $secondary-font-size;
+                    font-style: italic;
+
+                    padding-top: 3px;
+                }
             }
         }
-    }
-    .keywords {
-        padding: 10px 0 0 10px;
-        font-size: $unfocused-font-size;
+        .keywords {
+            padding: 10px 0 0 10px;
+            font-size: $unfocused-font-size;
+        }
     }
 }
 </style>

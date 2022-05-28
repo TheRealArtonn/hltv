@@ -6,7 +6,9 @@
                 Relevant to you
             </div>
             <div class="team-list">
-                <h3 class="body__title">PGL</h3>
+                <h3 class="body__title">
+                    PGL Major Antwerp 2022 challengers stage
+                </h3>
                 <div class="list-item">
                     <div class="item_team">
                         <img
@@ -30,6 +32,9 @@
                 <div class="body__unfocused-title body__border-above">
                     Other
                 </div>
+                <h3 class="body__title">
+                    PGL Major Antwerp 2022 challengers stage
+                </h3>
 
                 <h3 class="body__title">PGL</h3>
                 <div class="list-item">
@@ -53,7 +58,9 @@
                     <div class="score"><h2>16</h2></div>
                 </div>
 
-                <h3 class="body__title">PGL</h3>
+                <h3 class="body__title">
+                    PGL Major Antwerp 2022 challengers stage
+                </h3>
 
                 <div class="list-item">
                     <div class="item_team">
@@ -77,6 +84,7 @@
                 </div>
             </div>
         </div>
+        <div class="module__footer">SEE ALL RECENT RESULTS</div>
         <div class="module__footer">see all recent results</div>
     </div>
 </template>

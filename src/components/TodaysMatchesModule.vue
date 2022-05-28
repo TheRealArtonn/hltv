@@ -2,7 +2,7 @@
     <div class="module grid__item--todaymatch">
         <h2 class="module__header">Todays matches</h2>
         <div class="module__body">
-            <h3 class="body__title">PGL</h3>
+            <h3 class="body__title">Relevant to you</h3>
             <div class="matches">
                 <div class="matches__teams">
                     <div class="list-item">

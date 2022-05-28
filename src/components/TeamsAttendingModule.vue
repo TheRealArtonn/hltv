@@ -4,8 +4,12 @@
         <div class="module__body module__body--no-more">
             <div class="module-cards">
                 <div class="module-card">
-                    <div class="module-card-selected">
-                        <div></div>
+                    <div class="module-card-above module-card-above--selected">
+                        <div
+                            class="module-card-above__text module-card-above__text--current"
+                        >
+                            Current
+                        </div>
                     </div>
                     <img
                         class="module-card__img"
@@ -18,6 +22,9 @@
                     </div>
                 </div>
                 <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#2</div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -29,6 +36,9 @@
                     </div>
                 </div>
                 <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#3</div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -40,6 +50,9 @@
                     </div>
                 </div>
                 <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#3</div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -51,6 +64,9 @@
                     </div>
                 </div>
                 <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#4</div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -62,6 +78,9 @@
                     </div>
                 </div>
                 <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#5</div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -73,6 +92,9 @@
                     </div>
                 </div>
                 <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#6</div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -84,6 +106,9 @@
                     </div>
                 </div>
                 <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#7</div>
+                    </div>
                     <img
                         class="module-card__img"
                         src="@/assets/img/teams/team-1.jpg"
@@ -148,12 +173,28 @@ export default {
         }
     }
 }
-
-.module-card-selected {
+.module-card-above {
     width: 100%;
     height: 100%;
-    border: 5px solid $main-color;
     border-radius: 5px;
     position: absolute;
+
+    &--selected {
+        border: 5px solid $main-color;
+    }
+
+    &__text {
+        width: 33px;
+        font-size: 1.2rem;
+        color: $secondary-font-color;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 5px 0px;
+        padding: 10px;
+
+        &--current {
+            width: 60px;
+            background-color: $main-color;
+        }
+    }
 }
 </style>

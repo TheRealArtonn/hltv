@@ -1,5 +1,5 @@
 <template>
-    <div class="module grid__item--todaymatch">
+    <div class="module">
         <h2 class="module__header">Todays matches</h2>
         <div class="module__body">
             <h3 class="body__title">Relevant to you</h3>

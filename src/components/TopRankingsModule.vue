@@ -4,8 +4,8 @@
         <div class="module__body">
             <div class="module__body__rank">
                 <div class="places">
-                    <div class="rank"><h2>1.</h2></div>
                     <div class="team">
+                        <div class="rank"><h2>1.</h2></div>
                         <img
                             src="../assets/img/teams/teamsvg/sizzlle-thumbnail.svg"
                             alt="logo"
@@ -16,7 +16,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    <div class="move">
                         <img
                             src="../assets/img/icons/streg.svg"
                             alt="Streg icon"
@@ -24,8 +24,8 @@
                     </div>
                 </div>
                 <div class="places">
-                    <div class="rank"><h2>2.</h2></div>
                     <div class="team">
+                        <div class="rank"><h2>2.</h2></div>
                         <img
                             src="../assets/img/teams/teamsvg/natus-logo.svg"
                             alt="logo"
@@ -44,8 +44,8 @@
                     </div>
                 </div>
                 <div class="places">
-                    <div class="rank"><h2>3.</h2></div>
                     <div class="team">
+                        <div class="rank"><h2>3.</h2></div>
                         <img
                             src="../assets/img/teams/teamsvg/cloud-9-emblem.svg"
                             alt="logo"
@@ -64,8 +64,8 @@
                     </div>
                 </div>
                 <div class="places">
-                    <div class="rank"><h2>4.</h2></div>
                     <div class="team">
+                        <div class="rank"><h2>4.</h2></div>
                         <img
                             src="../assets/img/teams/teamsvg/ence.svg"
                             alt="logo"
@@ -84,8 +84,8 @@
                     </div>
                 </div>
                 <div class="places">
-                    <div class="rank"><h2>5.</h2></div>
                     <div class="team">
+                        <div class="rank"><h2>5.</h2></div>
                         <img
                             src="../assets/img/teams/teamsvg/heroic-logo.svg"
                             alt="logo"
@@ -119,20 +119,31 @@ export default {
 </script>
 
 <style lang="scss">
-.grid__item--toprankings {
-    grid-column: 3 / span 1;
-    grid-row: 18 / span 20;
+.rank {
+    margin-right: 50px;
 }
 
 .places {
     display: flex;
     justify-content: space-between;
+    font: bold;
+
     padding: 20px;
 }
 .team {
     display: flex;
+    align-items: center;
 }
 .teamname {
     padding: 4px;
+}
+.move {
+    display: flex;
+    align-items: center;
+}
+
+.grid__item--toprankings {
+    grid-column: 3 / span 1;
+    grid-row: 18 / span 20;
 }
 </style>

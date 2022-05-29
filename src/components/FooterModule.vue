@@ -2,7 +2,9 @@
     <footer class="footer">
         <section class="footer__primary">
             <nav class="footer__nav">
-                <router-link class="footer__nav-link" to="/">Jobs</router-link>
+                <router-link class="footer__nav-link" to="/jobs"
+                    >Jobs</router-link
+                >
                 <router-link class="footer__nav-link" to="/contact"
                     >Contact</router-link
                 >

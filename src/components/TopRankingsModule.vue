@@ -126,6 +126,7 @@ export default {
 .places {
     display: flex;
     justify-content: space-between;
+    font: bold;
 
     padding: 20px;
 }

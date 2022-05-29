@@ -98,6 +98,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "@/assets/styles/_variables.scss";
+
 .team-list {
     display: flex;
     align-items: center;
@@ -109,7 +111,7 @@ export default {
 }
 
 .list-item {
-    padding: 0 5px;
+    padding: 0 $general-padding;
 }
 .score {
     margin-left: auto;

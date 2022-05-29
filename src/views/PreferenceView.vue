@@ -4,6 +4,8 @@
         <recent-results-module class="grid__item grid__item--recent" />
         <top-rankings-module class="grid__item grid__item--topranking" />
         <todays-matches-module class="grid__item grid__item--topmatches" />
+        <reklame-module-thin class="grid__item--ad-thin" />
+        <reklame-module-wide class="grid__item--ad-wide" />
     </div>
 </template>
 
@@ -12,6 +14,8 @@ import PreferenceModule from "@/components/PreferenceModule.vue";
 import RecentResultsModule from "@/components/RecentResultsModule.vue";
 import TopRankingsModule from "../components/TopRankingsModule.vue";
 import TodaysMatchesModule from "@/components/TodaysMatchesModule.vue";
+import ReklameModuleThin from "@/components/ReklameModuleThin.vue";
+import ReklameModuleWide from "@/components/ReklameModuleWide.vue";
 
 export default {
     name: "PreferenceView",
@@ -23,6 +27,8 @@ export default {
         RecentResultsModule,
         TopRankingsModule,
         TodaysMatchesModule,
+        ReklameModuleThin,
+        ReklameModuleWide,
     },
 };
 </script>
@@ -30,7 +36,16 @@ export default {
 @import "@/assets/styles/_variables.scss";
 .grid__item--preference {
     grid-column: 1 / span 2;
-    grid-row: 1 / span 14;
+    grid-row: 1 / span 11;
+}
+.grid__item--ad-wide {
+    grid-column: 1 / span 2;
+    grid-row: 12 / span 2;
+}
+
+.grid__item--ad-thin {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 5;
 }
 .grid__item--recent {
     grid-column: 3 / span 1;

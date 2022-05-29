@@ -40,16 +40,16 @@ export default {
 
 .grid__item--recentresults {
     grid-column: 3 / span 1;
-    grid-row: 1 / span 8;
+    grid-row: 1 / span 7;
 }
 
 .grid__item--toprank {
     grid-column: 3 / span 1;
-    grid-row: 9 / span 5;
+    grid-row: 8 / span 6;
 }
 
 .grid__item--todaymatch {
     grid-column: 3 / span 1;
-    grid-row: 14 / span 9;
+    grid-row: 14 / span 7;
 }
 </style>

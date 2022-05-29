@@ -38,13 +38,13 @@
                     <div class="input__field">
                         <input
                             class="form__input"
-                            type="text"
+                            type="password"
                             placeholder="Password"
                         />
                         <input
                             class="form__input"
-                            type="text"
-                            placeholder="Confirm"
+                            type="password"
+                            placeholder="Confirm password"
                         />
                     </div>
                 </form>

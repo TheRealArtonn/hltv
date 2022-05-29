@@ -206,7 +206,7 @@
     margin-left: auto;
     margin-right: auto;
     &:hover {
-        background: hotpink;
+        background: $blue-hover-color;
     }
 }
 .options {

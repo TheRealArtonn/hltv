@@ -1,13 +1,13 @@
 <template>
     <header class="header">
-        <div class="header__logo">
+        <router-link class="header__logo" to="/">
             <!-- Hvad fuck er image fluid -->
             <img
                 class="header__logo-img-fluid"
                 src="../assets/img/nav-logo.svg"
                 alt="hltv logo"
             />
-        </div>
+        </router-link>
         <!-- Vi genbruger nav strukturen i footeren, så det ville være smart at gøre den general
          i stedet for "header__nav", så bare "nav" så kan styleing bare copy pastes -->
         <nav class="header__nav">
@@ -132,6 +132,12 @@ export default {
 
             &:last-child {
                 border-right: none;
+            }
+
+            &:hover {
+                background-color: $list-select-bg;
+                border-top: 1px solid $list-select-border;
+                border-bottom: 1px solid $list-select-border;
             }
         }
     }

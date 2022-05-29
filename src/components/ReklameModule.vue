@@ -1,5 +1,5 @@
 <template>
-    <img class="reklame" src="@/assets/img/ads.jpg" />
+    <img class="reklame" src="@/assets/img//ads/Ads.jpg" alt="reklame" />
 </template>
 
 <script>
@@ -19,5 +19,6 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 </style>

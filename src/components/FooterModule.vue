@@ -98,9 +98,16 @@ export default {
                 text-decoration: none;
                 color: $primary-font-color;
                 border-right: 1px $element-border-color solid;
-                padding: 30px 20px;
+                padding: 20px;
+
                 &:first-child {
                     border-left: 1px $element-border-color solid;
+                }
+
+                &:hover {
+                    background-color: $list-select-bg;
+                    border-top: 1px solid $list-select-border;
+                    border-bottom: 1px solid $list-select-border;
                 }
             }
         }
@@ -113,6 +120,10 @@ export default {
             .footer__some-links {
                 width: 50px;
                 height: auto;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
                 // Klart oplagt at gøre brug a mixins her, da koden bliver gentaget flere gange, med minimal ændring
                 &--fb {
                     height: 35px;

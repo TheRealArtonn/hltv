@@ -50,6 +50,6 @@ export default {
 
 .grid__item--todaymatch {
     grid-column: 3 / span 1;
-    grid-row: 14 / span 9;
+    grid-row: 14 / span 7;
 }
 </style>

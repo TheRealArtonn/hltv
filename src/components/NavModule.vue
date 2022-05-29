@@ -133,6 +133,12 @@ export default {
             &:last-child {
                 border-right: none;
             }
+
+            &:hover {
+                background-color: $list-select-bg;
+                border-top: 1px solid $list-select-border;
+                border-bottom: 1px solid $list-select-border;
+            }
         }
     }
 

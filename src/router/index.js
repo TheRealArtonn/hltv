@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import Signup from "../views/SignupView.vue";
 import Settings from "../views/SettingsView.vue";
 import Preference from "../views/PreferenceView.vue";
+import ErrorView from "../views/ErrorView.vue";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: "/preference",
         name: "preference",
         component: Preference,
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "404notfound",
+        component: ErrorView,
     },
 ];
 

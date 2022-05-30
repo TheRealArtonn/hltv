@@ -148,7 +148,7 @@ export default {
 
         .header__searchbar-input {
             height: 38px;
-            width: 195px;
+            width: 155px;
             //mellemrum????????? O_O
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;

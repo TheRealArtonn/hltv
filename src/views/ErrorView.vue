@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 .not-found {
-    height: 60vh;
+    height: calc(100vh - 282px);
     display: flex;
     justify-content: center;
     align-items: center;

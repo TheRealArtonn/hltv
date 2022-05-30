@@ -48,7 +48,7 @@
             "id": 3,
             "img": "pro-league.jpg",
             "title": "ESL Pro League Season 16 Conference SA open Qualifier",
-            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "text": "South America (Online) | May 5th - May 6th",
             "flag": "",
             "relevant": false,
             "teams": [
@@ -68,9 +68,9 @@
         },
         {
             "id": 4,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier 2",
-            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "img": "aorus.jpg",
+            "title": "Aorus League Invitational 2022",
+            "text": "South America (Online) | Jun 6th - Jun 10th",
             "flag": "",
             "relevant": false,
             "teams": [
@@ -90,9 +90,9 @@
         },
         {
             "id": 5,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier 2",
-            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "img": "svensk.jpg",
+            "title": "Svenska Elitserien Spring 2022",
+            "text": "Stockholm, Sweden | Jun 10th - Jun 11th",
             "flag": "",
             "relevant": false,
             "teams": [
@@ -114,9 +114,9 @@
     "upcoming": [
         {
             "id": 6,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier",
-            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "img": "esea.jpg",
+            "title": "ESEA Advanced Season 41 Europe",
+            "text": "Europe (Online) | Jun 16th",
             "flag": "",
             "relevant": true,
             "teams": [
@@ -136,9 +136,9 @@
         },
         {
             "id": 7,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier",
-            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "img": "esl.jpg",
+            "title": "ESL Challenger League Season 41 Asia-Pacific",
+            "text": "Asia (Online) | Jun 23rd - Jun 27th",
             "flag": "",
             "relevant": false,
             "teams": [
@@ -158,9 +158,9 @@
         },
         {
             "id": 8,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier",
-            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "img": "esl.jpg",
+            "title": "ESL Impact League Season 1 Finals",
+            "text": "Dallas, TX, United States | Jun 3rd - Jun 5th",
             "flag": "",
             "relevant": false,
             "teams": [
@@ -180,9 +180,9 @@
         },
         {
             "id": 9,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier",
-            "text": "Europe (Online) | May 23rd - Jun 25th",
+            "img": "esl.jpg",
+            "title": "ESL Impact Valencia 2022",
+            "text": "Valencia, Spain | Jul 1st - Jul 3rd",
             "flag": "",
             "relevant": false,
             "teams": [

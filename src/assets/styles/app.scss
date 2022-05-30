@@ -184,9 +184,10 @@
             white-space: nowrap;
 
             .title-container__title {
-                width: calc(100% - 30px);
+                width: 295px;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                margin-right: 15px;
             }
 
             .text-container__text {

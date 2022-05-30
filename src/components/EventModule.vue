@@ -49,7 +49,7 @@ export default {
     data: function () {
         return {
             moduleName: "Events",
-            selectedId: 1,
+            selectedId: 2,
             itemListSections: [
                 {
                     title: "Ongoing",
@@ -111,4 +111,8 @@ export default {
 <style lang="scss" scoped>
 //Import needed css partials, in this case we needed the variables.
 @import "@/assets/styles/_variables.scss";
+
+.module__body .list-item__text-box--side-icon .title-container__title {
+    width: 315px;
+}
 </style>

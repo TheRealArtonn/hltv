@@ -49,7 +49,7 @@ export default {
     props: [],
     data: function () {
         return {
-            moduleName: "Text to be inputted",
+            moduleName: "IEM Dallas 2022 Europe Closed Qu",
         };
     },
 };

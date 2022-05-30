@@ -1,4 +1,4 @@
-# frontend
+# HLTV project guide
 
 ## Project setup
 ```

@@ -43,7 +43,6 @@ export default {
     methods: {
         onClickSelected(value) {
             this.selectedSetting = value;
-            console.log(value);
         },
     },
 };

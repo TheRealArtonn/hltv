@@ -26,8 +26,6 @@ export default {
     },
     beforeMount() {
         this.currentPreset = Number(localStorage.getItem("currentPreset")) || 0;
-
-        console.log(this.currentPreset);
     },
 };
 </script>

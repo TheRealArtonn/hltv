@@ -86,9 +86,7 @@ export default {
         return {};
     },
     methods: {
-        Onclicklogin() {
-            console.log("hej");
-        },
+        Onclicklogin() {},
     },
 };
 </script>

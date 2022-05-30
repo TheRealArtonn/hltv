@@ -29,7 +29,6 @@ export default {
     methods: {
         onClickModal(value) {
             this.loginModalValue = value;
-            console.log(value);
         },
     },
 };

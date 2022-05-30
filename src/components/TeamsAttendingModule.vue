@@ -168,7 +168,8 @@ export default {
     }
 
     &__text {
-        padding: $general-padding;
+        padding-left: 15px;
+        padding-top: 7px;
 
         .text__title {
             font-size: $primary-font-size;
@@ -198,7 +199,7 @@ export default {
         padding: 10px;
 
         &--current {
-            width: 60px;
+            width: 70px;
             background-color: $main-color;
         }
     }

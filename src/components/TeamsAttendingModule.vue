@@ -27,12 +27,12 @@
                     </div>
                     <img
                         class="module-card__img"
-                        src="@/assets/img/teams/team-1.jpg"
+                        src="@/assets/img/teams/team-2.jpg"
                         alt=""
                     />
                     <div class="module-card__text">
-                        <div class="text__title">FaZe</div>
-                        <div class="text__info">Spring Groups Winner</div>
+                        <div class="text__title">Na'Vi</div>
+                        <div class="text__info">Spring Groups Runner-up</div>
                     </div>
                 </div>
                 <div class="module-card">
@@ -41,26 +41,12 @@
                     </div>
                     <img
                         class="module-card__img"
-                        src="@/assets/img/teams/team-1.jpg"
+                        src="@/assets/img/teams/team-3.jpg"
                         alt=""
                     />
                     <div class="module-card__text">
-                        <div class="text__title">FaZe</div>
-                        <div class="text__info">Spring Groups Winner</div>
-                    </div>
-                </div>
-                <div class="module-card">
-                    <div class="module-card-above">
-                        <div class="module-card-above__text">#3</div>
-                    </div>
-                    <img
-                        class="module-card__img"
-                        src="@/assets/img/teams/team-1.jpg"
-                        alt=""
-                    />
-                    <div class="module-card__text">
-                        <div class="text__title">FaZe</div>
-                        <div class="text__info">Spring Groups Winner</div>
+                        <div class="text__title">ENCE</div>
+                        <div class="text__info">Spring Showdown Europe</div>
                     </div>
                 </div>
                 <div class="module-card">
@@ -69,12 +55,12 @@
                     </div>
                     <img
                         class="module-card__img"
-                        src="@/assets/img/teams/team-1.jpg"
+                        src="@/assets/img/teams/team-4.jpg"
                         alt=""
                     />
                     <div class="module-card__text">
-                        <div class="text__title">FaZe</div>
-                        <div class="text__info">Spring Groups Winner</div>
+                        <div class="text__title">G2</div>
+                        <div class="text__info">Spring Groups Runner-up</div>
                     </div>
                 </div>
                 <div class="module-card">
@@ -83,11 +69,11 @@
                     </div>
                     <img
                         class="module-card__img"
-                        src="@/assets/img/teams/team-1.jpg"
+                        src="@/assets/img/teams/team-5.jpg"
                         alt=""
                     />
                     <div class="module-card__text">
-                        <div class="text__title">FaZe</div>
+                        <div class="text__title">Vitality</div>
                         <div class="text__info">Spring Groups Winner</div>
                     </div>
                 </div>
@@ -97,12 +83,12 @@
                     </div>
                     <img
                         class="module-card__img"
-                        src="@/assets/img/teams/team-1.jpg"
+                        src="@/assets/img/teams/team-6.jpg"
                         alt=""
                     />
                     <div class="module-card__text">
-                        <div class="text__title">FaZe</div>
-                        <div class="text__info">Spring Groups Winner</div>
+                        <div class="text__title">Big</div>
+                        <div class="text__info">Spring Groups Runner-up</div>
                     </div>
                 </div>
                 <div class="module-card">
@@ -111,12 +97,26 @@
                     </div>
                     <img
                         class="module-card__img"
-                        src="@/assets/img/teams/team-1.jpg"
+                        src="@/assets/img/teams/team-7.jpg"
                         alt=""
                     />
                     <div class="module-card__text">
-                        <div class="text__title">FaZe</div>
-                        <div class="text__info">Spring Groups Winner</div>
+                        <div class="text__title">OG</div>
+                        <div class="text__info">Spring Showdown Europe</div>
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-card-above">
+                        <div class="module-card-above__text">#8</div>
+                    </div>
+                    <img
+                        class="module-card__img"
+                        src="@/assets/img/teams/team-8.jpg"
+                        alt=""
+                    />
+                    <div class="module-card__text">
+                        <div class="text__title">paiN</div>
+                        <div class="text__info">Spring Groups Runner-up</div>
                     </div>
                 </div>
             </div>
@@ -155,6 +155,12 @@ export default {
     overflow: hidden;
     position: relative;
 
+    &:hover {
+        cursor: pointer;
+        border: 1px solid $list-select-border;
+        background-color: $list-select-bg;
+    }
+
     &__img {
         width: 194px;
         height: 160px;
@@ -176,7 +182,7 @@ export default {
 .module-card-above {
     width: 100%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
     position: absolute;
 
     &--selected {

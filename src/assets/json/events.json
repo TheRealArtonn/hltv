@@ -24,8 +24,8 @@
         },
         {
             "id": 2,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier 1",
+            "img": "intel.jpg",
+            "title": "IEM Dallas 2022 Europe Closed Qu",
             "text": "Europe (Online) | May 23rd - Jun 25th",
             "flag": "",
             "relevant": true,
@@ -46,8 +46,8 @@
         },
         {
             "id": 3,
-            "img": "republic-league-small.jpg",
-            "title": "Republeague Season 3 Closed Qualifier 2",
+            "img": "pro-league.jpg",
+            "title": "ESL Pro League Season 16 Conference SA open Qualifier",
             "text": "Europe (Online) | May 23rd - Jun 25th",
             "flag": "",
             "relevant": false,
